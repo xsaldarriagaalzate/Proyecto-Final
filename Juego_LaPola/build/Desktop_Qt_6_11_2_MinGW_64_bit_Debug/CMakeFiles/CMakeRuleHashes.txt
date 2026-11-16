@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+6c43c4147a9a0958ac1423f2b3c648a4 CMakeFiles/Juego_LaPola_autogen
+1630f8411fb24fa56e13a3f6babfb754 Juego_LaPola_autogen/timestamp

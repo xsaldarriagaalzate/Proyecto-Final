@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-43f48516217a86e78dd2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Juego_LaPola",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Juego_LaPola::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Juego_LaPola-Debug-fc620e3dd0a4a64ea24c.json",
+					"name" : "Juego_LaPola",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Juego_LaPola_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Juego_LaPola_autogen-Debug-2a0335385e950c81f820.json",
+					"name" : "Juego_LaPola_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Juego_LaPola_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Juego_LaPola_autogen_timestamp_deps-Debug-7d074a67fae44a0967e2.json",
+					"name" : "Juego_LaPola_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug",
+		"source" : "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
