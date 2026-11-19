@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imagenes/pola_correr.png</file>
+        <file>imagenes/fondos_nivel-1.png</file>
+    </qresource>
+</RCC>

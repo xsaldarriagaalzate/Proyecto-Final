@@ -199,6 +199,30 @@ Juego_LaPola_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola_autogen.dir\build.make CMakeFiles/Juego_LaPola_autogen.dir/build
 .PHONY : Juego_LaPola_autogen/fast
 
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.obj: Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj
+.PHONY : Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.obj
+
+# target to build an object file
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj
+.PHONY : Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj
+
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.i: Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.i
+.PHONY : Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.i
+
+# target to preprocess a source file
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.i
+.PHONY : Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.i
+
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.s: Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.s
+.PHONY : Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.s
+
+# target to generate assembly for a file
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.s
+.PHONY : Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.s
+
 Juego_LaPola_autogen/mocs_compilation.obj: Juego_LaPola_autogen/mocs_compilation.cpp.obj
 .PHONY : Juego_LaPola_autogen/mocs_compilation.obj
 
@@ -271,6 +295,54 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+personaje.obj: personaje.cpp.obj
+.PHONY : personaje.obj
+
+# target to build an object file
+personaje.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/personaje.cpp.obj
+.PHONY : personaje.cpp.obj
+
+personaje.i: personaje.cpp.i
+.PHONY : personaje.i
+
+# target to preprocess a source file
+personaje.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/personaje.cpp.i
+.PHONY : personaje.cpp.i
+
+personaje.s: personaje.cpp.s
+.PHONY : personaje.s
+
+# target to generate assembly for a file
+personaje.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/personaje.cpp.s
+.PHONY : personaje.cpp.s
+
+policarpa.obj: policarpa.cpp.obj
+.PHONY : policarpa.obj
+
+# target to build an object file
+policarpa.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj
+.PHONY : policarpa.cpp.obj
+
+policarpa.i: policarpa.cpp.i
+.PHONY : policarpa.i
+
+# target to preprocess a source file
+policarpa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/policarpa.cpp.i
+.PHONY : policarpa.cpp.i
+
+policarpa.s: policarpa.cpp.s
+.PHONY : policarpa.s
+
+# target to generate assembly for a file
+policarpa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/policarpa.cpp.s
+.PHONY : policarpa.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -286,6 +358,9 @@ help:
 	@echo ... Juego_LaPola_autogen
 	@echo ... Juego_LaPola_autogen_timestamp_deps
 	@echo ... Juego_LaPola
+	@echo ... Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.obj
+	@echo ... Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.i
+	@echo ... Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.s
 	@echo ... Juego_LaPola_autogen/mocs_compilation.obj
 	@echo ... Juego_LaPola_autogen/mocs_compilation.i
 	@echo ... Juego_LaPola_autogen/mocs_compilation.s
@@ -295,6 +370,12 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... personaje.obj
+	@echo ... personaje.i
+	@echo ... personaje.s
+	@echo ... policarpa.obj
+	@echo ... policarpa.i
+	@echo ... policarpa.s
 .PHONY : help
 
 
