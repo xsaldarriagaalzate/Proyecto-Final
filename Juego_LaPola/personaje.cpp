@@ -1,15 +1,23 @@
+
 #include "personaje.h"
 
 Personaje::Personaje(const QString &rutaSprite, int ancho, int alto,
                      int vidas, QGraphicsItem *padre)
-    : QGraphicsPixmapItem(padre), vx(0), vy(0), vidas(vidas)
+    : QGraphicsPixmapItem(padre),
+    vx(0),
+    vy(0),
+    vidas(vidas)
 {
     QPixmap sprite(rutaSprite);
-    if (sprite.isNull()) {              // si aún no existe el sprite,
-        sprite = QPixmap(ancho, alto);  // se dibuja un rectángulo de color
+
+    if (sprite.isNull())
+    {
+        sprite = QPixmap(ancho, alto);
         sprite.fill(Qt::darkRed);
     }
-    setPixmap(sprite.scaled(ancho, alto));
+
+    setPixmap(sprite);
+    setZValue(10);
 }
 
 void Personaje::actualizar(double dt)
@@ -30,7 +38,11 @@ int Personaje::getVidas() const { return vidas; }
 
 void Personaje::perderVida()
 {
-    if (vidas > 0) vidas--;
+    if (vidas > 0)
+        vidas--;
 }
 
-bool Personaje::estaVivo() const { return vidas > 0; }
+bool Personaje::estaVivo() const
+{
+    return vidas > 0;
+}

@@ -77,8 +77,12 @@ Juego_LaPola_autogen/timestamp: CMakeFiles/Juego_LaPola.dir/compiler_depend.ts
 
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/recursos.qrc
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: CMakeFiles/Juego_LaPola_autogen.dir/AutoRcc_recursos_EWIEGA46WW_Info.json
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_agachada.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_agachada-quieta.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/fondos_nivel-1.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_quieta.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_correr.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_saltar.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Qt/6.11.2/mingw_64/bin/rcc.exe
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Qt/6.11.2/mingw_64/bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for recursos.qrc"

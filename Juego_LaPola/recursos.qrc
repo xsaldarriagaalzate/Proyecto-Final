@@ -2,5 +2,9 @@
     <qresource prefix="/">
         <file>imagenes/pola_correr.png</file>
         <file>imagenes/fondos_nivel-1.png</file>
+        <file>imagenes/pola_quieta.png</file>
+        <file>imagenes/pola_saltar.png</file>
+        <file>imagenes/pola_agachada.png</file>
+        <file>imagenes/pola_agachada-quieta.png</file>
     </qresource>
 </RCC>

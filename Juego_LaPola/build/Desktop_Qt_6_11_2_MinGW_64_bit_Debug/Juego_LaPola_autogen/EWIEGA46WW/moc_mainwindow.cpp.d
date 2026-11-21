@@ -1,10 +1,13 @@
 C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/Juego_LaPola_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/mainwindow.h \
   C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/Juego_LaPola_autogen/moc_predefs.h \
+  C:/Qt/6.11.2/mingw_64/include/QtCore/QElapsedTimer \
   C:/Qt/6.11.2/mingw_64/include/QtCore/QList \
   C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
+  C:/Qt/6.11.2/mingw_64/include/QtCore/QSet \
   C:/Qt/6.11.2/mingw_64/include/QtCore/QSize \
   C:/Qt/6.11.2/mingw_64/include/QtCore/QSizeF \
+  C:/Qt/6.11.2/mingw_64/include/QtCore/QVector \
   C:/Qt/6.11.2/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/q20functional.h \
@@ -50,6 +53,7 @@ C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informat
   C:/Qt/6.11.2/mingw_64/include/QtCore/qdatastream.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.11.2/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -141,10 +145,13 @@ C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informat
   C:/Qt/6.11.2/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qvariant.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qvarlengtharray.h \
+  C:/Qt/6.11.2/mingw_64/include/QtCore/qvector.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.11.2/mingw_64/include/QtGui/QImage \
   C:/Qt/6.11.2/mingw_64/include/QtGui/QKeyEvent \
+  C:/Qt/6.11.2/mingw_64/include/QtGui/QPixmap \
   C:/Qt/6.11.2/mingw_64/include/QtGui/QTransform \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qbitmap.h \

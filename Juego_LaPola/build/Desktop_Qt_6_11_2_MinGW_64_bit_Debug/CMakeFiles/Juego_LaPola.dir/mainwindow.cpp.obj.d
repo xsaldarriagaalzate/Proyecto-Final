@@ -396,6 +396,7 @@ CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qscrollarea.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QSet \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QKeyEvent \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qevent.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qcoreevent.h \
@@ -425,7 +426,14 @@ CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QElapsedTimer \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qelapsedtimer.h \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\policarpa.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QVector \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qvector.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/QPixmap \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/QImage \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \

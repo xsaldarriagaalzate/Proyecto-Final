@@ -9,8 +9,12 @@
 	"INCLUDE_DIR" : "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/Juego_LaPola_autogen/include",
 	"INPUTS" : 
 	[
+		"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/imagenes/pola_agachada.png",
+		"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/imagenes/pola_agachada-quieta.png",
 		"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/imagenes/fondos_nivel-1.png",
-		"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/imagenes/pola_correr.png"
+		"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/imagenes/pola_quieta.png",
+		"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/imagenes/pola_correr.png",
+		"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/imagenes/pola_saltar.png"
 	],
 	"LOCK_FILE" : "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/CMakeFiles/Juego_LaPola_autogen.dir/AutoRcc_recursos_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
