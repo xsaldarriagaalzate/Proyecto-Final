@@ -1,14 +1,13 @@
-
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QGraphicsScene>
 #include <QGraphicsView>
+#include <QLabel>
 #include <QSet>
 #include <QKeyEvent>
-#include <QElapsedTimer>
-#include "policarpa.h"
+#include <QGraphicsScene>
+#include "nivel.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -27,13 +26,22 @@ protected:
     void keyReleaseEvent(QKeyEvent *evento) override;
 
 private:
-    void actualizarControles();   // traduce las teclas presionadas en acciones de la Pola
+
+    void crearMenu();
+    void cargarNivel(int numero);
+    void volverAlMenu();
+
+    QGraphicsScene *escenaMenu = nullptr;
+
+    void actualizarControles();
+    void actualizarHud();  // tiempo y vidas
+    void mostrarMensaje(const QString &texto);
 
     Ui::MainWindow *ui;
-    QGraphicsScene *escena = nullptr;   // nullptr: seguro si el constructor termina antes
+    Nivel *nivel = nullptr;
     QGraphicsView *vista = nullptr;
     Policarpa *pola = nullptr;
+    QLabel *hud = nullptr;
     QSet<int> teclasPresionadas;
-    QElapsedTimer cronometro;           // mide el tiempo real entre frames
 };
 #endif // MAINWINDOW_H

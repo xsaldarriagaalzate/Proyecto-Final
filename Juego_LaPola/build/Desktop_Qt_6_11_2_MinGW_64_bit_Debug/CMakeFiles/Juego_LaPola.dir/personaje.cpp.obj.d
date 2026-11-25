@@ -1,6 +1,7 @@
 CMakeFiles/Juego_LaPola.dir/personaje.cpp.obj: \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.cpp \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\entidad.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qobject.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qobjectdefs.h \
@@ -372,4 +373,5 @@ CMakeFiles/Juego_LaPola.dir/personaje.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qrgb.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qrgba64.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qimage.h \
- C:/Qt/6.11.2/mingw_64/include/QtGui/qpixelformat.h
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qpixelformat.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QString

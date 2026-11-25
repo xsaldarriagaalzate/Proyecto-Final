@@ -347,9 +347,21 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/entidad.h",
+			"MU",
+			"EWIEGA46WW/moc_entidad.cpp",
+			null
+		],
+		[
 			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/nivel.h",
+			"MU",
+			"EWIEGA46WW/moc_nivel.cpp",
 			null
 		],
 		[
@@ -438,12 +450,22 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/entidad.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/main.cpp",
 			"MU",
 			null
 		],
 		[
 			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/nivel.cpp",
 			"MU",
 			null
 		],

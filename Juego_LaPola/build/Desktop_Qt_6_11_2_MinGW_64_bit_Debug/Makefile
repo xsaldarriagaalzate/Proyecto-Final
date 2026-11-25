@@ -247,6 +247,30 @@ Juego_LaPola_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/mocs_compilation.cpp.s
 .PHONY : Juego_LaPola_autogen/mocs_compilation.cpp.s
 
+entidad.obj: entidad.cpp.obj
+.PHONY : entidad.obj
+
+# target to build an object file
+entidad.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/entidad.cpp.obj
+.PHONY : entidad.cpp.obj
+
+entidad.i: entidad.cpp.i
+.PHONY : entidad.i
+
+# target to preprocess a source file
+entidad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/entidad.cpp.i
+.PHONY : entidad.cpp.i
+
+entidad.s: entidad.cpp.s
+.PHONY : entidad.s
+
+# target to generate assembly for a file
+entidad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/entidad.cpp.s
+.PHONY : entidad.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -294,6 +318,30 @@ mainwindow.s: mainwindow.cpp.s
 mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
+
+nivel.obj: nivel.cpp.obj
+.PHONY : nivel.obj
+
+# target to build an object file
+nivel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/nivel.cpp.obj
+.PHONY : nivel.cpp.obj
+
+nivel.i: nivel.cpp.i
+.PHONY : nivel.i
+
+# target to preprocess a source file
+nivel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/nivel.cpp.i
+.PHONY : nivel.cpp.i
+
+nivel.s: nivel.cpp.s
+.PHONY : nivel.s
+
+# target to generate assembly for a file
+nivel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/nivel.cpp.s
+.PHONY : nivel.cpp.s
 
 personaje.obj: personaje.cpp.obj
 .PHONY : personaje.obj
@@ -364,12 +412,18 @@ help:
 	@echo ... Juego_LaPola_autogen/mocs_compilation.obj
 	@echo ... Juego_LaPola_autogen/mocs_compilation.i
 	@echo ... Juego_LaPola_autogen/mocs_compilation.s
+	@echo ... entidad.obj
+	@echo ... entidad.i
+	@echo ... entidad.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... nivel.obj
+	@echo ... nivel.i
+	@echo ... nivel.s
 	@echo ... personaje.obj
 	@echo ... personaje.i
 	@echo ... personaje.s

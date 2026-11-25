@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-6e0b8d8cd37bdebc9f55.json",
+					"jsonFile" : "directory-.-Debug-2c585494ed9d9f40813b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Juego_LaPola::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Juego_LaPola-Debug-6753b1aa5b0aec57372d.json",
+					"jsonFile" : "target-Juego_LaPola-Debug-8386b0dc99d4915cf695.json",
 					"name" : "Juego_LaPola",
 					"projectIndex" : 0
 				},

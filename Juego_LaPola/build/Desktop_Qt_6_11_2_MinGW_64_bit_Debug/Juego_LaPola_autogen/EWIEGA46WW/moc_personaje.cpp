@@ -51,7 +51,7 @@ template <> constexpr inline auto Personaje::qt_create_metaobjectdata<qt_meta_ta
             qt_methods, qt_properties, qt_enums);
 }
 Q_CONSTINIT const QMetaObject Personaje::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    QMetaObject::SuperData::link<Entidad::staticMetaObject>(),
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN9PersonajeE_t>.stringdata,
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN9PersonajeE_t>.data,
     qt_static_metacall,
@@ -79,14 +79,12 @@ void *Personaje::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN9PersonajeE_t>.strings))
         return static_cast<void*>(this);
-    if (!strcmp(_clname, "QGraphicsPixmapItem"))
-        return static_cast< QGraphicsPixmapItem*>(this);
-    return QObject::qt_metacast(_clname);
+    return Entidad::qt_metacast(_clname);
 }
 
 int Personaje::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QObject::qt_metacall(_c, _id, _a);
+    _id = Entidad::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

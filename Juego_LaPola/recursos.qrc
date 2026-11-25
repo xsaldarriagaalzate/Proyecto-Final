@@ -6,5 +6,6 @@
         <file>imagenes/pola_saltar.png</file>
         <file>imagenes/pola_agachada.png</file>
         <file>imagenes/pola_agachada-quieta.png</file>
+        <file>imagenes/fondo_inicio.png</file>
     </qresource>
 </RCC>

@@ -386,16 +386,21 @@ CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qbitmap.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtabwidget.h \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsScene \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
- C:/Qt/6.11.2/mingw_64/include/QtGui/qpen.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsView \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsview.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qpainter.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qtextoption.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qpen.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qscrollarea.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qtextdocument.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qurl.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QSet \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QKeyEvent \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qevent.h \
@@ -404,8 +409,6 @@ CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qabstracteventdispatcher.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qeventloop.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qdeadlinetimer.h \
- C:/Qt/6.11.2/mingw_64/include/QtCore/qiodevice.h \
- C:/Qt/6.11.2/mingw_64/include/QtCore/qurl.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qeventpoint.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qvector2d.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qvectornd.h \
@@ -426,19 +429,27 @@ CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsScene \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\nivel.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QTimer \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qtimer.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QElapsedTimer \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qelapsedtimer.h \
- C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\policarpa.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QVector \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qvector.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QPointF \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QRectF \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\entidad.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qpainterpath.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QString \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\policarpa.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QPixmap \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QImage \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
- C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
- C:/Qt/6.11.2/mingw_64/include/QtGui/qpainterpath.h \
  C:/Users/XIOMAR~1/DOCUME~1/INGENI~1/SEMEST~2/INFORM~1/PROYEC~1/JUEGO_~1/build/DESKTO~1/JUEGO_~1/include/./ui_mainwindow.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QApplication \
@@ -453,6 +464,13 @@ CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QScrollBar \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qscrollbar.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractslider.h \
- C:/Qt/6.11.2/mingw_64/include/QtCore/QTimer \
- C:/Qt/6.11.2/mingw_64/include/QtCore/qtimer.h \
- C:/Qt/6.11.2/mingw_64/include/QtCore/QDebug
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QDebug \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QtMath \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsProxyWidget \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsproxywidget.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicswidget.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsTextItem

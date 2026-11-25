@@ -1,4 +1,3 @@
-
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
@@ -7,6 +6,11 @@
 #include <QKeyEvent>
 #include <QSet>
 #include <QDebug>
+#include <QtMath>
+#include <QPushButton>
+#include <QGraphicsProxyWidget>
+#include <QGraphicsTextItem>
+#include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
@@ -17,91 +21,132 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle("La Pola: Mensajera de la Libertad");
     setFixedSize(800, 600);
 
-    // CREAR ESCENARIO
+    // VISTA
 
-    escena = new QGraphicsScene(this);
-
-    QPixmap hojaFondos(":/imagenes/fondos_nivel-1.png");
-
-    if (hojaFondos.isNull())
-    {
-        qDebug() << "Error: no se encontró el fondo.";
-        return;   // pola queda en nullptr y los eventos de teclado lo comprueban
-    }
-
-    int anchoOrig = hojaFondos.width();
-    int altoFranja = hojaFondos.height() / 3;
-
-    int xActual = 0;
-
-    // CARGAR LOS FONDOS
-
-    for (int i = 0; i < 3; ++i)
-    {
-        QPixmap franja = hojaFondos.copy(0, (i * altoFranja) + 4, anchoOrig, altoFranja - 8);
-
-        QPixmap franjaEscalada = franja.scaledToHeight(600, Qt::FastTransformation);
-
-        QGraphicsPixmapItem *itemFondo = new QGraphicsPixmapItem(franjaEscalada);
-
-        itemFondo->setPos(xActual, 0);
-        itemFondo->setZValue(-1);
-
-        escena->addItem(itemFondo);
-
-        xActual += franjaEscalada.width();
-    }
-
-    escena->setSceneRect(0, 0, xActual, 600);
-
-    // CREAR PERSONAJE
-
-    pola = new Policarpa();
-
-    pola->setPos(100, 400);
-    pola->setZValue(10);
-    pola->setVisible(true);
-
-    escena->addItem(pola);
-
-    // CONFIGURAR LA CÁMARA
-
-    vista = new QGraphicsView(escena, this);
-
+    vista = new QGraphicsView(this);
+    vista->setFrameShape(QFrame::NoFrame);
     vista->setAlignment(Qt::AlignLeft | Qt::AlignTop);
-
     vista->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     vista->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-
     vista->setFocusPolicy(Qt::NoFocus);
     vista->resetTransform();
-
     setCentralWidget(vista);
 
-    // ACTUALIZAR PERSONAJE
+    // HUD (tiempo y vidas)
 
-    QTimer *reloj = new QTimer(this);
+    hud = new QLabel(this);
+    hud->setStyleSheet("color: white; background-color: rgba(0, 0, 0, 150);"
+                       "padding: 6px; font-size: 16px;");
+    hud->move(10, 10);
+    hud->hide();
 
-    cronometro.start();
+    // MENÚ DE INICIO
 
-    connect(reloj, &QTimer::timeout, this, [this]()
+    crearMenu();
+    vista->setScene(escenaMenu);
+}
+
+// MENÚ
+
+void MainWindow::crearMenu()
+{
+    const int W = 800, H = 600;
+
+    escenaMenu = new QGraphicsScene(this);
+    escenaMenu->setSceneRect(0, 0, W, H);
+
+    QPixmap fondo(":/imagenes/fondo_inicio.png");
+    if (!fondo.isNull())
+    {
+        escenaMenu->addPixmap(fondo.scaled(W, H, Qt::KeepAspectRatioByExpanding, Qt::SmoothTransformation));
+    }
+    else
+    {
+        qDebug() << "No se encontró :/imagenes/inicio.png (revisa el .qrc)";
+        escenaMenu->setBackgroundBrush(Qt::black);
+    }
+
+    QGraphicsTextItem *titulo = escenaMenu->addText("La Pola: Mensajera de la Libertad");
+    titulo->setDefaultTextColor(Qt::black);
+    titulo->setFont(QFont("Arial", 28, QFont::Bold));
+    titulo->setPos((W - titulo->boundingRect().width()) / 2, 120);
+
+
+    QPushButton *btn1 = new QPushButton("Nivel 1");
+    btn1->setFixedSize(300, 50);
+    btn1->setFocusPolicy(Qt::NoFocus);
+    QGraphicsProxyWidget *proxy1 = escenaMenu->addWidget(btn1);
+    proxy1->setPos((W - 300) / 2, 220);
+
+    connect(btn1, &QPushButton::clicked, this, [this]() { cargarNivel(1); });
+}
+
+// CARGAR UN NIVEL
+
+void MainWindow::cargarNivel(int numero)
+{
+
+    if (nivel)
+    {
+        vista->setScene(escenaMenu);
+        pola = nullptr;
+        nivel->deleteLater();
+        nivel = nullptr;
+    }
+
+    teclasPresionadas.clear();
+
+    // CREAR EL NIVEL
+
+    nivel = new Nivel(numero, this);
+    pola = nivel->pola();
+
+    vista->setScene(nivel->obtenerEscena());
+
+
+    connect(nivel, &Nivel::actualizado, this, [this]()
             {
-                // restart() devuelve los milisegundos desde la última vez y reinicia el conteo
-                double dt = cronometro.restart() / 1000.0;
-
-                // Si la ventana se congela (por ejemplo al arrastrarla), dt sería enorme
-                // y la Pola atravesaría el piso. Se limita a 50 ms.
-                if (dt > 0.05)
-                    dt = 0.05;
-
-                pola->actualizar(dt);
+                if (!nivel || !pola)
+                    return;
 
                 double centroX = pola->x() + pola->boundingRect().width() / 2.0;
-
                 vista->centerOn(centroX, 300);
+
+                if (!nivel->terminado())
+                    actualizarHud();
             });
 
-    reloj->start(16);
+    connect(nivel, &Nivel::victoria, this, [this]()
+            {
+                mostrarMensaje("¡Mensaje entregado! Ganaste");
+
+                QTimer::singleShot(3000, this, [this]()
+                                   {
+                                       if (nivel)
+                                           volverAlMenu();
+                                   });
+            });
+
+    connect(nivel, &Nivel::derrota, this, [this]()
+            {
+                if (nivel->tiempoRestante() <= 0)
+                    mostrarMensaje("Se acabó, la misión fracasó");
+                else
+                    mostrarMensaje("Te quedaste sin vidas");
+
+                QTimer::singleShot(3000, this, [this]()
+                                   {
+                                       if (nivel)
+                                           volverAlMenu();
+                                   });
+            });
+
+    hud->show();
+    hud->raise();
+    actualizarHud();
+
+    nivel->iniciar();
+    setFocus();
 
     // ACTUALIZAR ESCENARIO
 
@@ -109,17 +154,61 @@ MainWindow::MainWindow(QWidget *parent)
                        {
                            vista->horizontalScrollBar()->setValue(0);
                            vista->verticalScrollBar()->setValue(0);
-
                            vista->viewport()->update();
-                           escena->update();
                        });
+}
+
+// VOLVER AL MENÚ
+
+void MainWindow::volverAlMenu()
+{
+    vista->setScene(escenaMenu);
+    hud->hide();
+    teclasPresionadas.clear();
+
+    if (nivel)
+    {
+        pola = nullptr;
+        nivel->deleteLater();
+        nivel = nullptr;
+    }
+
+    vista->horizontalScrollBar()->setValue(0);
+    vista->verticalScrollBar()->setValue(0);
+    vista->viewport()->update();
+}
+
+// HUD
+
+void MainWindow::actualizarHud()
+{
+    if (!pola || !nivel)
+        return;
+
+    int segundos = qCeil(nivel->tiempoRestante());
+
+    hud->setText(QString("Tiempo: %1:%2    Vidas: %3")
+                     .arg(segundos / 60)
+                     .arg(segundos % 60, 2, 10, QChar('0'))
+                     .arg(pola->getVidas()));
+    hud->adjustSize();
+}
+
+void MainWindow::mostrarMensaje(const QString &texto)
+{
+    qDebug() << texto;
+    hud->setText(texto);
+    hud->adjustSize();
 }
 
 // CONTROL DEL TECLADO
 
-// Una sola función decide qué hace la Pola según las teclas que están presionadas
+
 void MainWindow::actualizarControles()
 {
+    if (!pola)
+        return;
+
     // Movimiento horizontal (A tiene prioridad si se presionan ambas)
     if (teclasPresionadas.contains(Qt::Key_A))
         pola->moverIzquierda();
@@ -127,14 +216,20 @@ void MainWindow::actualizarControles()
         pola->moverDerecha();
     else
         pola->detener();
-
-    // Agacharse mientras S esté presionada
-    pola->agachar(teclasPresionadas.contains(Qt::Key_S));
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *evento)
 {
-    if (!pola || evento->isAutoRepeat())
+    if (!pola || !nivel || evento->isAutoRepeat())
+        return;
+
+    if (evento->key() == Qt::Key_Escape)
+    {
+        volverAlMenu();
+        return;
+    }
+
+    if (nivel->terminado())
         return;
 
     teclasPresionadas.insert(evento->key());
@@ -147,13 +242,24 @@ void MainWindow::keyPressEvent(QKeyEvent *evento)
     {
         pola->saltar();
     }
+
+//  ------- TEMPORAL --------
+//  -------------------------
+    if (evento->key() == Qt::Key_L)
+        pola->perderVida();          // L = perder una vida
+    if (evento->key() == Qt::Key_T)
+        nivel->penalizar(30);        // T = restar 30 segundos
+    if (evento->key() == Qt::Key_P)  // P = imprime dónde está la Pola (para ubicar plataformas)
+        qDebug() << "Pola  izquierda x:" << pola->x()
+                 << " derecha x:" << pola->x() + pola->boundingRect().width()
+                 << " pies y:" << pola->pies();
 }
 
 // SOLTAR TECLAS
 
 void MainWindow::keyReleaseEvent(QKeyEvent *evento)
 {
-    if (!pola || evento->isAutoRepeat())
+    if (!pola || !nivel || evento->isAutoRepeat())
         return;
 
     teclasPresionadas.remove(evento->key());

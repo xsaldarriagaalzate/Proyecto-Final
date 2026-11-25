@@ -17,23 +17,25 @@ public:
 
     void actualizar(double dt) override;
 
-    // Acciones
     void moverIzquierda();
     void moverDerecha();
     void detener();
     void saltar();
-    void agachar(bool valor);
 
-    // Información para otras clases (guardias, Pacman)
-    bool estaAgachada() const;
     double radioDeteccion() const;
     void setSueloY(double y);
+
+    double pies() const;
+    void aterrizar(double yPies);
+    void setEnSuelo(bool valor);
+    void setSueloActivo(bool valor);
 
 private:
     bool agachada;
     bool enSuelo;
-    double sueloY;      // altura del piso en la escena
-    int direccion;      // intención de movimiento: -1 izquierda, 0 quieta, 1 derecha
+    double sueloY;
+    bool sueloActivo;
+    int direccion;
 
     // Valores del personaje
     static constexpr double VELOCIDAD = 180.0;       // px/s caminando
@@ -53,11 +55,9 @@ private:
     QVector<QPixmap> animQuieta;
     QVector<QPixmap> animCorrer;
     QVector<QPixmap> animSaltar;
-    QVector<QPixmap> animAgachada;
-    QVector<QPixmap> animAgachadaQuieta;
-    const QVector<QPixmap> *animActual;   // cuál animación se está mostrando
+    const QVector<QPixmap> *animActual;
     int cuadroActual;
-    double tiempoCuadro;                  // tiempo acumulado en el cuadro actual
+    double tiempoCuadro;
     bool mirandoIzquierda;
     bool animRepite;
 

@@ -1,31 +1,28 @@
 #ifndef PERSONAJE_H
 #define PERSONAJE_H
 
-#include <QObject>
-#include <QGraphicsPixmapItem>
+#include "entidad.h"
 
-class Personaje : public QObject, public QGraphicsPixmapItem
+class Personaje : public Entidad
 {
     Q_OBJECT
 public:
     Personaje(const QString &rutaSprite, int ancho, int alto,
               int vidas = 3, QGraphicsItem *padre = nullptr);
-    virtual ~Personaje() = default;
+    ~Personaje() override = default;
 
-    // Movimiento
-    virtual void actualizar(double dt);
+    void actualizar(double dt) override;
     void setVelocidad(double vx, double vy);
     double velX() const;
     double velY() const;
 
-    // Vidas
     int getVidas() const;
     void perderVida();
     bool estaVivo() const;
 
 protected:
-    double vx;      // velocidad horizontal (píxeles por segundo)
-    double vy;      // velocidad vertical (píxeles por segundo)
+    double vx;
+    double vy;
     int vidas;
 };
 

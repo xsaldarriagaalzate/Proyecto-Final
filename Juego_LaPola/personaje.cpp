@@ -1,23 +1,12 @@
-
 #include "personaje.h"
 
 Personaje::Personaje(const QString &rutaSprite, int ancho, int alto,
                      int vidas, QGraphicsItem *padre)
-    : QGraphicsPixmapItem(padre),
+    : Entidad(rutaSprite, ancho, alto, padre),   // el sprite lo carga Entidad
     vx(0),
     vy(0),
     vidas(vidas)
 {
-    QPixmap sprite(rutaSprite);
-
-    if (sprite.isNull())
-    {
-        sprite = QPixmap(ancho, alto);
-        sprite.fill(Qt::darkRed);
-    }
-
-    setPixmap(sprite);
-    setZValue(10);
 }
 
 void Personaje::actualizar(double dt)

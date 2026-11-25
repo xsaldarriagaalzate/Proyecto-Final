@@ -28,6 +28,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         policarpa.cpp
         personaje.h
         personaje.cpp
+        entidad.h
+        entidad.cpp
+        nivel.h
+        nivel.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Juego_LaPola APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

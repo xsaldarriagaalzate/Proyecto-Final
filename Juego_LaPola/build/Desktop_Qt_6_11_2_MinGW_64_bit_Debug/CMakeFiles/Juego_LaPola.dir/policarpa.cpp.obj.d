@@ -331,6 +331,7 @@ CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QImage \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\entidad.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qobject.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qmetatype.h \
@@ -379,6 +380,7 @@ CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qvarlengtharray.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qalloc.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qpainterpath.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QString \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QTransform \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QtMath \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QDebug \

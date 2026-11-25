@@ -2,10 +2,14 @@ Juego_LaPola_autogen/timestamp: \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/QElapsedTimer \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/QList \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
+	C:/Qt/6.11.2/mingw_64/include/QtCore/QPointF \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
+	C:/Qt/6.11.2/mingw_64/include/QtCore/QRectF \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/QSet \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/QSize \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/QSizeF \
+	C:/Qt/6.11.2/mingw_64/include/QtCore/QString \
+	C:/Qt/6.11.2/mingw_64/include/QtCore/QTimer \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/QVector \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/q20bit.h \
@@ -130,6 +134,7 @@ Juego_LaPola_autogen/timestamp: \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/qtenvironmentvariables.h \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/qtextstream.h \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/qtformat_impl.h \
+	C:/Qt/6.11.2/mingw_64/include/QtCore/qtimer.h \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/qtmetamacros.h \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/qtnoop.h \
 	C:/Qt/6.11.2/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -175,6 +180,7 @@ Juego_LaPola_autogen/timestamp: \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qpainterpath.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qpalette.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qpen.h \
+	C:/Qt/6.11.2/mingw_64/include/QtGui/qpicture.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qpixelformat.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qpixmap.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qpointingdevice.h \
@@ -184,6 +190,7 @@ Juego_LaPola_autogen/timestamp: \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qrgba64.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qscreen.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qscreen_platform.h \
+	C:/Qt/6.11.2/mingw_64/include/QtGui/qtextdocument.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qtextoption.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qtgui-config.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qtguiexports.h \
@@ -196,12 +203,14 @@ Juego_LaPola_autogen/timestamp: \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsScene \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsView \
+	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLabel \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QMainWindow \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/qframe.h \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsview.h \
+	C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlabel.h \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/qscrollarea.h \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -638,9 +647,13 @@ Juego_LaPola_autogen/timestamp: \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/Juego_LaPola_autogen/moc_predefs.h \
+	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/entidad.cpp \
+	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/entidad.h \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/main.cpp \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/mainwindow.cpp \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/mainwindow.h \
+	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/nivel.cpp \
+	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/nivel.h \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/personaje.cpp \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/personaje.h \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/policarpa.cpp \
