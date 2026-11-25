@@ -18,9 +18,9 @@ Policarpa::Policarpa()
     animRepite(true)
 {
 
-    animCorrer = cargarTira(":/imagenes/pola_correr.png", 8, ALTURA_DE_PIE);
+    animCorrer = cargarTira(":/imagenes/pola_correr.png", 10, ALTURA_DE_PIE);
     animSaltar = cargarTira(":/imagenes/pola_saltar.png", 8, ALTURA_DE_PIE);
-    animQuieta = cargarTira(":/imagenes/pola_quieta.png", 2, ALTURA_DE_PIE);
+    animQuieta = cargarTira(":/imagenes/pola_quieta.png", 8, ALTURA_DE_PIE);
 
     animActual = &animQuieta;
 

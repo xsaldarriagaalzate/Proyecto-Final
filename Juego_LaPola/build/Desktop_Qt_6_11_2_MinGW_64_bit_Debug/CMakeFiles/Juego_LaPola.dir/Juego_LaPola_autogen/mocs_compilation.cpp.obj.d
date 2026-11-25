@@ -450,9 +450,9 @@ CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qvector.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QPointF \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QRectF \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/QPixmap \
  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/entidad.h \
  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/policarpa.h \
- C:/Qt/6.11.2/mingw_64/include/QtGui/QPixmap \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QImage \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/personaje.h \

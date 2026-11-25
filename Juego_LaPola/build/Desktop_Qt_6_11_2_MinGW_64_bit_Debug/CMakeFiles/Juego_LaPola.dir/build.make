@@ -79,10 +79,16 @@ Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Docum
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: CMakeFiles/Juego_LaPola_autogen.dir/AutoRcc_recursos_EWIEGA46WW_Info.json
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_agachada.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_agachada-quieta.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/plataformas.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_ataque.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/fondos_nivel-1.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_quieta.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/guardia_quieto.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/fondo_inicio.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_correr.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/techo.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/guardia_caminando.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_dano.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_saltar.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Qt/6.11.2/mingw_64/bin/rcc.exe
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Qt/6.11.2/mingw_64/bin/rcc.exe

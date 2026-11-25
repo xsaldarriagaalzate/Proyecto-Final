@@ -45,7 +45,6 @@ private:
     static constexpr double RADIO_NORMAL = 250.0;    // distancia a la que la ven
     static constexpr double RADIO_AGACHADA = 100.0;  // sigilosa: la ven de más cerca
     static constexpr double ALTURA_DE_PIE = 96.0;    // alto en pantalla de la Pola de pie
-    static constexpr double ALTURA_AGACHADA = 64.0;  // alto en pantalla de la Pola agachada
 
     static QRect limitesVisibles(const QImage &imagen);
     QVector<QPixmap> cargarTira(const QString &ruta, int nCuadros, double alturaObjetivo,

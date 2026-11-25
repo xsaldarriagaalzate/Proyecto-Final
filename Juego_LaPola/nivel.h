@@ -8,6 +8,8 @@
 #include <QVector>
 #include <QPointF>
 #include <QRectF>
+#include <QPixmap>
+#include <QGraphicsPixmapItem>
 #include "entidad.h"
 #include "policarpa.h"
 
@@ -17,6 +19,8 @@ class Nivel : public QObject
 public:
     explicit Nivel(int numero, QObject *padre = nullptr);
     ~Nivel() override = default;
+
+    static bool existe(int numero) { return numero == 1; }
 
     QGraphicsScene *obtenerEscena() const;
     Policarpa *pola() const;
@@ -28,6 +32,8 @@ public:
 
     void penalizar(double segundos);
 
+    void imprimirPlataformas() const;
+
 signals:
     void actualizado();
     void victoria();
@@ -36,7 +42,13 @@ signals:
 private:
 
     void construirNivel1();
-    void agregarPlataforma(double x, double ySuperficie, double ancho);
+
+    void cargarSprites();
+    void agregarTecho(double x, double ySuperficie, double ancho);
+    void agregarLadrillo(double x, double ySuperficie, int tipo);    // parte de arriba (tipo 0, 1 o 2)
+
+    void agregarPlataforma(const QPixmap &dibujo, double x, double ySuperficie, double margenLateral, double desfase, int tipo);
+    QRectF rectanguloPiso(const QGraphicsPixmapItem *plataforma) const;
 
     void reglas(double dt);
     void reglasNivel1(double dt);
@@ -58,12 +70,26 @@ private:
     QPointF puntoSeguro;
 
     QVector<Entidad*> entidades;
-    QVector<QRectF> plataformas;
+    QPixmap spriteTecho;
+    QVector<QPixmap> spritesLadrillo;
+    QVector<QGraphicsPixmapItem*> plataformas;   // cada plataforma es su dibujo; los datos van dentro (setData)
     QTimer reloj;
     QElapsedTimer cronometro;
 
     static constexpr bool MOSTRAR_PLATAFORMAS = true;
     static constexpr double GROSOR_PLATAFORMA = 20.0;
+
+    static constexpr bool MODO_EDICION = true;
+
+    static constexpr int DATO_TIPO = 0;
+    static constexpr int DATO_MARGEN = 1;
+    static constexpr int DATO_DESFASE = 2;
+
+    static constexpr double ESCALA_LADRILLO = 2.0;     // cuánto se agranda cada pieza de plataformas.png
+    static constexpr double MARGEN_TECHO = 0.25;      // fracción del ancho SIN piso a cada lado (las pendientes)
+    static constexpr double MARGEN_LADRILLO = 0.04;
+    static constexpr double DESFASE_TECHO = 0.0;       // px que el dibujo sube sobre la superficie donde se para
+    static constexpr double DESFASE_LADRILLO = 0.0;
 
     static constexpr double TIEMPO_NIVEL1 = 150.0;   // 2 min 30 s
     static constexpr double MARGEN_META = 150.0;     // px antes del final del mapa

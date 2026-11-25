@@ -440,13 +440,13 @@ CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qvector.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QPointF \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QRectF \
- C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\entidad.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/QPixmap \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qpainterpath.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\entidad.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QString \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\policarpa.h \
- C:/Qt/6.11.2/mingw_64/include/QtGui/QPixmap \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QImage \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
