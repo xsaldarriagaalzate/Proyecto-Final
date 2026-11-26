@@ -21,15 +21,25 @@ Policarpa::Policarpa()
     animCorrer = cargarTira(":/imagenes/pola_correr.png", 10, ALTURA_DE_PIE);
     animSaltar = cargarTira(":/imagenes/pola_saltar.png", 8, ALTURA_DE_PIE);
     animQuieta = cargarTira(":/imagenes/pola_quieta.png", 8, ALTURA_DE_PIE);
+    animAtacar = cargarTira(":/imagenes/pola_ataque.png", 8, ALTURA_DE_PIE);
+    animDanio = cargarTira(":/imagenes/pola_danio.png", 8, ALTURA_DE_PIE);
 
     animActual = &animQuieta;
 
     if (!animQuieta.isEmpty())
         setPixmap(animQuieta[0]);
+
+    efectoAtaque = new QGraphicsRectItem(this);
+    efectoAtaque->setBrush(QColor(255, 60, 60, 120));
+    efectoAtaque->setPen(Qt::NoPen);
+    efectoAtaque->setVisible(false);
 }
 
 void Policarpa::actualizar(double dt)
 {
+    tiempoAtaque = qMax(0.0, tiempoAtaque - dt);
+    esperaAtaque = qMax(0.0, esperaAtaque - dt);
+    tiempoInvulnerable = qMax(0.0, tiempoInvulnerable - dt);
 
     double v = agachada ? VELOCIDAD * FACTOR_AGACHADA : VELOCIDAD;
     vx = direccion * v;
@@ -60,6 +70,22 @@ void Policarpa::actualizar(double dt)
     }
 
     actualizarAnimacion(dt);
+
+    if (tiempoInvulnerable > 0.0)
+        setOpacity((int(tiempoInvulnerable * 10) % 2) ? 0.35 : 1.0);
+    else
+        setOpacity(1.0);
+
+
+    if (tiempoAtaque > 0.0)
+    {
+        efectoAtaque->setRect(zonaAtaqueLocal());
+        efectoAtaque->setVisible(true);
+    }
+    else
+    {
+        efectoAtaque->setVisible(false);
+    }
 }
 
 QRect Policarpa::limitesVisibles(const QImage &original)
@@ -228,6 +254,8 @@ void Policarpa::saltar()
     }
 }
 
+
+
 void Policarpa::setSueloY(double y)
 {
     sueloY = y;
@@ -253,4 +281,49 @@ void Policarpa::setEnSuelo(bool valor)
 void Policarpa::setSueloActivo(bool valor)
 {
     sueloActivo = valor;
+}
+
+// COMBATE
+
+void Policarpa::atacar()
+{
+    // No golpea si todavía está en la pausa o si está agachada
+    if (esperaAtaque > 0.0 || agachada)
+        return;
+
+    tiempoAtaque = DURACION_ATAQUE;
+    esperaAtaque = ESPERA_ATAQUE;
+}
+
+
+QRectF Policarpa::zonaAtaqueLocal() const
+{
+    double ancho = pixmap().width();
+    double alto = pixmap().height();
+
+    double x = mirandoIzquierda ? -ALCANCE_ATAQUE : ancho;
+    return QRectF(x, alto * 0.2, ALCANCE_ATAQUE, alto * 0.6);
+}
+
+QRectF Policarpa::zonaAtaque() const
+{
+    if (tiempoAtaque <= 0.0)
+        return QRectF();
+
+    return mapRectToScene(zonaAtaqueLocal());
+}
+
+// Devuelve true si realmente perdió una vida
+bool Policarpa::recibirDanio()
+{
+    if (tiempoInvulnerable > 0.0 || !estaVivo())
+        return false;
+
+    perderVida();
+    tiempoInvulnerable = DURACION_INVULNERABLE;
+
+    vy = -350.0;
+    enSuelo = false;
+
+    return true;
 }

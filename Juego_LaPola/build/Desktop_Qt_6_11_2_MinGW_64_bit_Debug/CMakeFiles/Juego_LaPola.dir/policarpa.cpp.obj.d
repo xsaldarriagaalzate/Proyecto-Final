@@ -330,9 +330,11 @@ CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qline.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QImage \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
- C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
- C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\entidad.h \
- C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qobject.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qmetatype.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qfloat16.h \
@@ -356,11 +358,6 @@ CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qvariant.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qdebug.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qtextstream.h \
@@ -380,6 +377,11 @@ CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qvarlengtharray.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qalloc.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qpainterpath.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QRectF \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\entidad.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QString \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QTransform \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QtMath \

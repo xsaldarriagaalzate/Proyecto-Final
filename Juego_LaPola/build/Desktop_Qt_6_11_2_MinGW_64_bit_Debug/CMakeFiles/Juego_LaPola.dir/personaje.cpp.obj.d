@@ -374,4 +374,7 @@ CMakeFiles/Juego_LaPola.dir/personaje.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qrgba64.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qimage.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qpixelformat.h \
- C:/Qt/6.11.2/mingw_64/include/QtCore/QString
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QString \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QVector \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qvector.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/QPixmap

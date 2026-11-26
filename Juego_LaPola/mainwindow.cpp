@@ -233,34 +233,20 @@ void MainWindow::keyPressEvent(QKeyEvent *evento)
     if (!pola)
         return;
 
-    // G = imprimir y guardar las plataformas (modo edición)
-    if (evento->key() == Qt::Key_G)
-    {
-        qDebug() << "Tecla G presionada";
-        nivel->imprimirPlataformas();
-        return;
-    }
-
     teclasPresionadas.insert(evento->key());
 
     actualizarControles();
 
     // Saltar
-    if (evento->key() == Qt::Key_W ||
-        evento->key() == Qt::Key_Space)
+    if (evento->key() == Qt::Key_W || evento->key() == Qt::Key_Space)
     {
         pola->saltar();
     }
 
-    // PRUEBAS TEMPORALES de las reglas (borrar cuando haya guardias de verdad)
-    if (evento->key() == Qt::Key_L)
-        pola->perderVida();          // L = perder una vida
-    if (evento->key() == Qt::Key_T)
-        nivel->penalizar(30);        // T = restar 30 segundos
-    if (evento->key() == Qt::Key_P)  // P = imprime dónde está la Pola
-        qDebug() << "Pola  izquierda x:" << pola->x()
-                 << " derecha x:" << pola->x() + pola->boundingRect().width()
-                 << " pies y:" << pola->pies();
+    // Atacar
+    if (evento->key() == Qt::Key_J)
+        pola->atacar();
+
 }
 
 // SOLTAR TECLAS

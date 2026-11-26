@@ -165,6 +165,7 @@ C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informat
   C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsScene \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsscene.h \
@@ -384,6 +385,8 @@ C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informat
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/enemigo.h \
   C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/entidad.h \
   C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/personaje.h \
-  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/policarpa.h
+  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/policarpa.h \
+  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/soldado.h

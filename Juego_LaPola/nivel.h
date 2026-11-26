@@ -10,8 +10,10 @@
 #include <QRectF>
 #include <QPixmap>
 #include <QGraphicsPixmapItem>
+
 #include "entidad.h"
 #include "policarpa.h"
+#include "soldado.h"
 
 class Nivel : public QObject
 {
@@ -32,8 +34,6 @@ public:
 
     void penalizar(double segundos);
 
-    void imprimirPlataformas() const;
-
 signals:
     void actualizado();
     void victoria();
@@ -49,6 +49,10 @@ private:
 
     void agregarPlataforma(const QPixmap &dibujo, double x, double ySuperficie, double margenLateral, double desfase, int tipo);
     QRectF rectanguloPiso(const QGraphicsPixmapItem *plataforma) const;
+
+
+    void agregarSoldado(int indicePlataforma);
+    void resolverCombate();
 
     void reglas(double dt);
     void reglasNivel1(double dt);
@@ -73,13 +77,12 @@ private:
     QPixmap spriteTecho;
     QVector<QPixmap> spritesLadrillo;
     QVector<QGraphicsPixmapItem*> plataformas;   // cada plataforma es su dibujo; los datos van dentro (setData)
+    QVector<Soldado*> soldados;
     QTimer reloj;
     QElapsedTimer cronometro;
 
     static constexpr bool MOSTRAR_PLATAFORMAS = true;
     static constexpr double GROSOR_PLATAFORMA = 20.0;
-
-    static constexpr bool MODO_EDICION = true;
 
     static constexpr int DATO_TIPO = 0;
     static constexpr int DATO_MARGEN = 1;

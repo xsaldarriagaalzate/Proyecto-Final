@@ -5,6 +5,8 @@
 #include <QPixmap>
 #include <QImage>
 #include <QRect>
+#include <QGraphicsRectItem>
+#include <QRectF>
 
 #include "personaje.h"
 
@@ -30,6 +32,10 @@ public:
     void setEnSuelo(bool valor);
     void setSueloActivo(bool valor);
 
+    void atacar();
+    QRectF zonaAtaque() const;
+    bool recibirDanio();
+
 private:
     bool agachada;
     bool enSuelo;
@@ -54,11 +60,25 @@ private:
     QVector<QPixmap> animQuieta;
     QVector<QPixmap> animCorrer;
     QVector<QPixmap> animSaltar;
+    QVector<QPixmap> animAtacar;
+    QVector<QPixmap> animDanio;
     const QVector<QPixmap> *animActual;
     int cuadroActual;
     double tiempoCuadro;
     bool mirandoIzquierda;
     bool animRepite;
+
+    QRectF zonaAtaqueLocal() const;
+
+    double tiempoAtaque = 0.0;
+    double esperaAtaque = 0.0;
+    double tiempoInvulnerable = 0.0;
+    QGraphicsRectItem *efectoAtaque = nullptr;
+
+    static constexpr double DURACION_ATAQUE = 0.25;       // s que dura el golpe
+    static constexpr double ESPERA_ATAQUE = 0.5;          // s entre un golpe y el siguiente
+    static constexpr double DURACION_INVULNERABLE = 1.5;  // s sin poder recibir daño
+    static constexpr double ALCANCE_ATAQUE = 70.0;        // px hacia delante
 
     static constexpr double DURACION_CUADRO = 0.10;   // 0.10 s = 10 cuadros por segundo
 };

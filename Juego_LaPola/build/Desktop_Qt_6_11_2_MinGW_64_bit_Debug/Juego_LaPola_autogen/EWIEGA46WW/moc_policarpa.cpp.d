@@ -2,6 +2,7 @@ C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informat
   C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/Juego_LaPola_autogen/moc_predefs.h \
   C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
+  C:/Qt/6.11.2/mingw_64/include/QtCore/QRectF \
   C:/Qt/6.11.2/mingw_64/include/QtCore/QString \
   C:/Qt/6.11.2/mingw_64/include/QtCore/QVector \
   C:/Qt/6.11.2/mingw_64/include/QtCore/q17memory.h \
@@ -151,6 +152,7 @@ C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informat
   C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsitem.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \

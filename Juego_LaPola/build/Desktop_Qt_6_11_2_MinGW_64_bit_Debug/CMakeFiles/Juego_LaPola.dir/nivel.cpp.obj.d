@@ -397,10 +397,9 @@ CMakeFiles/Juego_LaPola.dir/nivel.cpp.obj: \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\policarpa.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QImage \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
- C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\soldado.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\enemigo.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QBrush \
- C:/Qt/6.11.2/mingw_64/include/QtCore/QDebug \
- C:/Qt/6.11.2/mingw_64/include/QtGui/QCursor \
- C:/Qt/6.11.2/mingw_64/include/QtGui/qcursor.h \
- C:/Qt/6.11.2/mingw_64/include/QtGui/qbitmap.h
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QDebug

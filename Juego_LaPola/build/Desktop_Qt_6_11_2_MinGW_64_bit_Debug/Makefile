@@ -247,6 +247,30 @@ Juego_LaPola_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/mocs_compilation.cpp.s
 .PHONY : Juego_LaPola_autogen/mocs_compilation.cpp.s
 
+enemigo.obj: enemigo.cpp.obj
+.PHONY : enemigo.obj
+
+# target to build an object file
+enemigo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/enemigo.cpp.obj
+.PHONY : enemigo.cpp.obj
+
+enemigo.i: enemigo.cpp.i
+.PHONY : enemigo.i
+
+# target to preprocess a source file
+enemigo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/enemigo.cpp.i
+.PHONY : enemigo.cpp.i
+
+enemigo.s: enemigo.cpp.s
+.PHONY : enemigo.s
+
+# target to generate assembly for a file
+enemigo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/enemigo.cpp.s
+.PHONY : enemigo.cpp.s
+
 entidad.obj: entidad.cpp.obj
 .PHONY : entidad.obj
 
@@ -391,6 +415,30 @@ policarpa.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/policarpa.cpp.s
 .PHONY : policarpa.cpp.s
 
+soldado.obj: soldado.cpp.obj
+.PHONY : soldado.obj
+
+# target to build an object file
+soldado.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/soldado.cpp.obj
+.PHONY : soldado.cpp.obj
+
+soldado.i: soldado.cpp.i
+.PHONY : soldado.i
+
+# target to preprocess a source file
+soldado.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/soldado.cpp.i
+.PHONY : soldado.cpp.i
+
+soldado.s: soldado.cpp.s
+.PHONY : soldado.s
+
+# target to generate assembly for a file
+soldado.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/soldado.cpp.s
+.PHONY : soldado.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -412,6 +460,9 @@ help:
 	@echo ... Juego_LaPola_autogen/mocs_compilation.obj
 	@echo ... Juego_LaPola_autogen/mocs_compilation.i
 	@echo ... Juego_LaPola_autogen/mocs_compilation.s
+	@echo ... enemigo.obj
+	@echo ... enemigo.i
+	@echo ... enemigo.s
 	@echo ... entidad.obj
 	@echo ... entidad.i
 	@echo ... entidad.s
@@ -430,6 +481,9 @@ help:
 	@echo ... policarpa.obj
 	@echo ... policarpa.i
 	@echo ... policarpa.s
+	@echo ... soldado.obj
+	@echo ... soldado.i
+	@echo ... soldado.s
 .PHONY : help
 
 

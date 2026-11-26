@@ -201,6 +201,7 @@ Juego_LaPola_autogen/timestamp: \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs_win.h \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
+	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsScene \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsView \
 	C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLabel \
@@ -647,6 +648,8 @@ Juego_LaPola_autogen/timestamp: \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/Juego_LaPola_autogen/moc_predefs.h \
+	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/enemigo.cpp \
+	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/enemigo.h \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/entidad.cpp \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/entidad.h \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/main.cpp \
@@ -659,5 +662,7 @@ Juego_LaPola_autogen/timestamp: \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/policarpa.cpp \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/policarpa.h \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/recursos.qrc \
+	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/soldado.cpp \
+	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/soldado.h \
 	C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/mainwindow.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

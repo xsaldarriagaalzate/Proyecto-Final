@@ -449,6 +449,9 @@ CMakeFiles/Juego_LaPola.dir/main.cpp.obj: \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\policarpa.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/QImage \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsRectItem \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\personaje.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\soldado.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\enemigo.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qapplication.h

@@ -5,6 +5,9 @@
 #include <QGraphicsPixmapItem>
 #include <QString>
 
+#include <QVector>
+#include <QPixmap>
+
 class Entidad : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
@@ -16,6 +19,9 @@ public:
     virtual void actualizar(double dt) = 0;
 
     bool colisionaCon(const Entidad *otra) const;
+
+protected:
+    static QVector<QPixmap> cargarAnimacion(const QString &ruta, int nCuadros, double alturaObjetivo);
 };
 
 #endif // ENTIDAD_H

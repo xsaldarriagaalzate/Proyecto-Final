@@ -6,7 +6,6 @@
 #include <QBrush>
 #include <QDebug>
 #include <QImage>
-#include <QCursor>
 
 static QVector<QPixmap> cortarEnBandas(const QPixmap &hoja)
 {
@@ -157,87 +156,107 @@ void Nivel::construirNivel1()
 
     cargarSprites();
 
-    agregarTecho(-2, 462, 280);
-    agregarTecho(346, 508, 280);
-    agregarTecho(585, 547, 280);
-    agregarTecho(885, 481, 280);
-    agregarTecho(1421, 495, 280);
-    agregarTecho(2009, 461, 280);
-    agregarTecho(2343, 487, 280);
-    agregarTecho(2696, 538, 280);
-    agregarTecho(3228, 463, 280);
-    agregarTecho(3891, 517, 280);
-    agregarTecho(4163, 475, 280);
-    agregarTecho(4483, 482, 280);
-    agregarTecho(5069, 496, 280);
-    agregarTecho(5342, 530, 280);
-    agregarTecho(5860, 484, 280);
-    agregarTecho(6290, 478, 280);
-    agregarTecho(6722, 459, 280);
-    agregarTecho(7032, 511, 280);
-    agregarTecho(7624, 501, 280);
-    agregarTecho(7980, 453, 280);
-    agregarTecho(8276, 506, 280);
-    agregarTecho(8861, 470, 280);
-    agregarTecho(9124, 538, 280);
-    agregarTecho(9618, 493, 280);
-    agregarTecho(9944, 532, 280);
-    agregarTecho(10455, 460, 280);
-    agregarTecho(10979, 469, 280);
-    agregarTecho(11283, 452, 280);
-    agregarTecho(11710, 518, 280);
-    agregarTecho(11977, 480, 280);
-    agregarTecho(12781, 426, 280);
-    agregarTecho(13057, 502, 280);
-    agregarTecho(13479, 509, 280);
-    agregarTecho(13729, 449, 280);
-    agregarTecho(14306, 519, 280);
-    agregarTecho(14740, 458, 280);
-    agregarTecho(15111, 455, 280);
-    agregarTecho(15476, 519, 280);
-    agregarTecho(15949, 485, 280);
-    agregarTecho(16228, 525, 280);
-    agregarTecho(16800, 450, 280);
-    agregarLadrillo(275, 357, 0);
-    agregarLadrillo(581, 368, 1);
-    agregarLadrillo(905, 264, 2);
-    agregarLadrillo(1219, 454, 0);
-    agregarLadrillo(1715, 360, 1);
-    agregarLadrillo(2347, 330, 2);
-    agregarLadrillo(2489, 170, 0);
-    agregarLadrillo(2966, 372, 1);
-    agregarLadrillo(3551, 388, 2);
-    agregarLadrillo(3605, 195, 0);
-    agregarLadrillo(4029, 305, 1);
-    agregarLadrillo(4745, 362, 2);
-    agregarLadrillo(5325, 351, 0);
-    agregarLadrillo(5642, 378, 1);
-    agregarLadrillo(6080, 313, 2);
-    agregarLadrillo(6565, 304, 0);
-    agregarLadrillo(7010, 330, 1);
-    agregarLadrillo(7319, 425, 2);
-    agregarLadrillo(7850, 330, 0);
-    agregarLadrillo(8197, 292, 1);
-    agregarLadrillo(8530, 334, 2);
-    agregarLadrillo(9134, 232, 0);
-    agregarLadrillo(9344, 372, 1);
-    agregarLadrillo(9875, 258, 2);
-    agregarLadrillo(10246, 405, 0);
-    agregarLadrillo(10761, 330, 1);
-    agregarLadrillo(11124, 201, 2);
-    agregarLadrillo(11518, 324, 0);
-    agregarLadrillo(12050, 330, 1);
-    agregarLadrillo(12367, 460, 2);
-    agregarLadrillo(12569, 231, 0);
-    agregarLadrillo(13285, 321, 1);
-    agregarLadrillo(13680, 284, 2);
-    agregarLadrillo(14134, 382, 0);
-    agregarLadrillo(14463, 354, 1);
-    agregarLadrillo(14802, 231, 2);
-    agregarLadrillo(15410, 330, 0);
-    agregarLadrillo(15730, 366, 1);
-    agregarLadrillo(16203, 330, 2);
-    agregarLadrillo(16592, 262, 0);
+    agregarTecho(-2, 462, 280);      // 0
+    agregarTecho(346, 508, 280);     // 1
+    agregarTecho(585, 547, 280);     // 2
+    agregarTecho(885, 481, 280);     // 3
+    agregarTecho(1421, 495, 280);    // 4
+    agregarTecho(2009, 461, 280);    // 5
+    agregarTecho(2343, 487, 280);    // 6
+    agregarTecho(2696, 538, 280);    // 7
+    agregarTecho(3228, 463, 280);    // 8
+    agregarTecho(3891, 517, 280);    // 9
+    agregarTecho(4163, 475, 280);    // 10
+    agregarTecho(4483, 482, 280);    // 11
+    agregarTecho(5069, 496, 280);    // 12
+    agregarTecho(5342, 530, 280);    // 13
+    agregarTecho(5860, 484, 280);    // 14
+    agregarTecho(6290, 478, 280);    // 15
+    agregarTecho(6722, 459, 280);    // 16
+    agregarTecho(7032, 511, 280);    // 17
+    agregarTecho(7624, 501, 280);    // 18
+    agregarTecho(7980, 453, 280);    // 19
+    agregarTecho(8276, 506, 280);    // 20
+    agregarTecho(8861, 470, 280);    // 21
+    agregarTecho(9124, 538, 280);    // 22
+    agregarTecho(9618, 493, 280);    // 23
+    agregarTecho(9944, 532, 280);    // 24
+    agregarTecho(10455, 460, 280);   // 25
+    agregarTecho(10979, 469, 280);   // 26
+    agregarTecho(11283, 452, 280);   // 27
+    agregarTecho(11710, 518, 280);   // 28
+    agregarTecho(11977, 480, 280);   // 29
+    agregarTecho(12781, 426, 280);   // 30
+    agregarTecho(13057, 502, 280);   // 31
+    agregarTecho(13479, 509, 280);   // 32
+    agregarTecho(13729, 449, 280);   // 33
+    agregarTecho(14306, 519, 280);   // 34
+    agregarTecho(14740, 458, 280);   // 35
+    agregarTecho(15111, 455, 280);   // 36
+    agregarTecho(15476, 519, 280);   // 37
+    agregarTecho(15949, 485, 280);   // 38
+    agregarTecho(16228, 525, 280);   // 39
+    agregarTecho(16800, 450, 280);   // 40
+    agregarLadrillo(275, 357, 0);    // 41
+    agregarLadrillo(581, 368, 1);    // 42
+    agregarLadrillo(905, 264, 2);    // 43
+    agregarLadrillo(1219, 454, 0);   // 44
+    agregarLadrillo(1715, 360, 1);   // 45
+    agregarLadrillo(2347, 330, 2);   // 46
+    agregarLadrillo(2489, 170, 0);   // 47
+    agregarLadrillo(2966, 372, 1);   // 48
+    agregarLadrillo(3551, 388, 2);   // 49
+    agregarLadrillo(3605, 195, 0);   // 50
+    agregarLadrillo(4029, 305, 1);   // 51
+    agregarLadrillo(4745, 362, 2);   // 52
+    agregarLadrillo(5325, 351, 0);   // 53
+    agregarLadrillo(5642, 378, 1);   // 54
+    agregarLadrillo(6080, 313, 2);   // 55
+    agregarLadrillo(6565, 304, 0);   // 56
+    agregarLadrillo(7010, 330, 1);   // 57
+    agregarLadrillo(7319, 425, 2);   // 58
+    agregarLadrillo(7850, 330, 0);   // 59
+    agregarLadrillo(8197, 292, 1);   // 60
+    agregarLadrillo(8530, 334, 2);   // 61
+    agregarLadrillo(9134, 232, 0);   // 62
+    agregarLadrillo(9344, 372, 1);   // 63
+    agregarLadrillo(9875, 258, 2);   // 64
+    agregarLadrillo(10246, 405, 0);  // 65
+    agregarLadrillo(10761, 330, 1);  // 66
+    agregarLadrillo(11124, 201, 2);  // 67
+    agregarLadrillo(11518, 324, 0);  // 68
+    agregarLadrillo(12050, 330, 1);  // 69
+    agregarLadrillo(12367, 460, 2);  // 70
+    agregarLadrillo(12569, 231, 0);  // 71
+    agregarLadrillo(13285, 321, 1);  // 72
+    agregarLadrillo(13680, 284, 2);  // 73
+    agregarLadrillo(14134, 382, 0);  // 74
+    agregarLadrillo(14463, 354, 1);  // 75
+    agregarLadrillo(14802, 231, 2);  // 76
+    agregarLadrillo(15410, 330, 0);  // 77
+    agregarLadrillo(15730, 366, 1);  // 78
+    agregarLadrillo(16203, 330, 2);  // 79
+    agregarLadrillo(16592, 262, 0);  // 80
+
+    agregarSoldado(4);
+    agregarSoldado(11);
+    agregarSoldado(15);
+    agregarSoldado(19);
+    agregarSoldado(23);
+    agregarSoldado(28);
+    agregarSoldado(32);
+    agregarSoldado(37);
+    agregarSoldado(41);
+    agregarSoldado(45);
+    agregarSoldado(49);
+    agregarSoldado(53);
+    agregarSoldado(58);
+    agregarSoldado(62);
+    agregarSoldado(67);
+    agregarSoldado(71);
+    agregarSoldado(76);
+    agregarSoldado(79);
+
 
     ultimaPlataforma = 0;
     puntoSeguro = QPointF(100, rectanguloPiso(plataformas.first()).top());
@@ -296,30 +315,22 @@ void Nivel::agregarPlataforma(const QPixmap &dibujo, double x, double ySuperfici
     imagen->setData(DATO_MARGEN, margenLateral);
     imagen->setData(DATO_DESFASE, desfase);
 
-    if (MODO_EDICION)
-    {
-        imagen->setFlag(QGraphicsItem::ItemIsMovable, true);
-        imagen->setShapeMode(QGraphicsPixmapItem::BoundingRectShape);
-        imagen->setCursor(Qt::OpenHandCursor);
-    }
-
     escena->addItem(imagen);
     plataformas.append(imagen);
 
-    // Para depurar: el piso en verde. Es HIJO del dibujo, así que se mueve con él
-    if (MOSTRAR_PLATAFORMAS)
-    {
-        QRectF local(ancho * margenLateral, desfase,
-                     ancho * (1.0 - 2.0 * margenLateral), GROSOR_PLATAFORMA);
+    // // Para depurar: el piso en verde. Es HIJO del dibujo, así que se mueve con él
+    // if (MOSTRAR_PLATAFORMAS)
+    // {
+    //     QRectF local(ancho * margenLateral, desfase,
+    //                  ancho * (1.0 - 2.0 * margenLateral), GROSOR_PLATAFORMA);
 
-        QGraphicsRectItem *guia = new QGraphicsRectItem(local, imagen);
-        guia->setBrush(QColor(0, 255, 0, 110));
-        guia->setPen(Qt::NoPen);
-        guia->setAcceptedMouseButtons(Qt::NoButton);   // los clics pasan al dibujo
-    }
+    //     QGraphicsRectItem *guia = new QGraphicsRectItem(local, imagen);
+    //     guia->setBrush(QColor(0, 255, 0, 110));
+    //     guia->setPen(Qt::NoPen);
+    //     guia->setAcceptedMouseButtons(Qt::NoButton);   // los clics pasan al dibujo
+    // }
 }
 
-// El rectángulo donde SE PISA se calcula con la posición ACTUAL del dibujo
 QRectF Nivel::rectanguloPiso(const QGraphicsPixmapItem *plataforma) const
 {
     double ancho = plataforma->pixmap().width();
@@ -330,26 +341,6 @@ QRectF Nivel::rectanguloPiso(const QGraphicsPixmapItem *plataforma) const
                   plataforma->y() + desfase,
                   ancho * (1.0 - 2.0 * margen),
                   GROSOR_PLATAFORMA);
-}
-
-// MODO EDICIÓN: imprime las plataformas tal como las dejaste
-void Nivel::imprimirPlataformas() const
-{
-    qDebug().noquote() << "---- copia estas líneas en construirNivel1() ----";
-
-    for (const QGraphicsPixmapItem *p : plataformas)
-    {
-        int x = qRound(p->x());
-        int y = qRound(p->y() + p->data(DATO_DESFASE).toDouble());   // altura de la superficie
-        int tipo = p->data(DATO_TIPO).toInt();
-
-        if (tipo < 0)
-            qDebug().noquote() << QString("    agregarTecho(%1, %2, %3);")
-                                      .arg(x).arg(y).arg(p->pixmap().width());
-        else
-            qDebug().noquote() << QString("    agregarLadrillo(%1, %2, %3);")
-                                      .arg(x).arg(y).arg(tipo);
-    }
 }
 
 // ACCESO
@@ -410,6 +401,7 @@ void Nivel::tick()
         e->actualizar(dt);
 
     resolverPlataformas(piesAntes);
+    resolverCombate();
 
     reglas(dt);
 
@@ -491,8 +483,7 @@ void Nivel::reglas(double dt)
 
 void Nivel::reglasNivel1(double dt)
 {
-    if (!MODO_EDICION)
-        tiempoRestanteSeg -= dt;
+    tiempoRestanteSeg -= dt;
 
     if (m_pola->x() + m_pola->boundingRect().width() >= metaX)
     {
@@ -510,5 +501,61 @@ void Nivel::reglasNivel1(double dt)
     {
         tiempoRestanteSeg = 0;
         terminar(false);
+    }
+}
+
+// GUARDIAS
+
+void Nivel::agregarSoldado(int indicePlataforma)
+{
+    if (indicePlataforma < 0 || indicePlataforma >= plataformas.size())
+    {
+        qDebug() << "agregarSoldado: no existe la plataforma" << indicePlataforma;
+        return;
+    }
+
+    QRectF piso = rectanguloPiso(plataformas[indicePlataforma]);
+
+    QVector<QPointF> ruta;
+    ruta << QPointF(piso.left(), piso.top())
+         << QPointF(piso.right() - Soldado::ANCHO, piso.top());
+
+    Soldado *soldado = new Soldado(ruta);
+    agregar(soldado);
+    soldados.append(soldado);
+}
+
+// COMBATE
+
+void Nivel::resolverCombate()
+{
+    QRectF zona = m_pola->zonaAtaque();
+
+    if (!zona.isNull())
+    {
+        for (int i = 0; i < soldados.size(); ++i)
+        {
+            if (soldados[i]->estaVivo() && zona.intersects(soldados[i]->sceneBoundingRect()))
+                soldados[i]->recibirGolpe();
+        }
+    }
+
+    for (int i = 0; i < soldados.size(); ++i)
+    {
+        if (soldados[i]->estaVivo() && m_pola->colisionaCon(soldados[i]))
+            m_pola->recibirDanio();
+    }
+
+    for (int i = soldados.size() - 1; i >= 0; --i)
+    {
+        Soldado *soldado = soldados[i];
+
+        if (!soldado->estaVivo())
+        {
+            soldados.removeAt(i);
+            entidades.removeOne(soldado);
+            escena->removeItem(soldado);
+            soldado->deleteLater();
+        }
     }
 }

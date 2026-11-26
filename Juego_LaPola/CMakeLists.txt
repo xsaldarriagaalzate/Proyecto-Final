@@ -32,6 +32,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         entidad.cpp
         nivel.h
         nivel.cpp
+        enemigo.h
+        enemigo.cpp
+        soldado.h
+        soldado.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
