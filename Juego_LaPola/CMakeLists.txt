@@ -36,6 +36,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         enemigo.cpp
         soldado.h
         soldado.cpp
+        pergamino.h
+        pergamino.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

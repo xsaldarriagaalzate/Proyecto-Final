@@ -40,6 +40,13 @@ MainWindow::MainWindow(QWidget *parent)
     hud->move(10, 10);
     hud->hide();
 
+    // CONTADOR DE PERGAMINOS (arriba a la derecha)
+
+    contador = new QLabel(this);
+    contador->setStyleSheet("color: white; background-color: rgba(0, 0, 0, 150);"
+                            "padding: 6px; font-size: 16px;");
+    contador->hide();
+
     // MENÚ DE INICIO
 
     crearMenu();
@@ -103,6 +110,10 @@ void MainWindow::cargarNivel(int numero)
 
     vista->setScene(nivel->obtenerEscena());
 
+    connect(nivel, &Nivel::pergaminoRecogido, this, [this]()
+            {
+                actualizarContador();
+            });
 
     connect(nivel, &Nivel::actualizado, this, [this]()
             {
@@ -143,7 +154,10 @@ void MainWindow::cargarNivel(int numero)
 
     hud->show();
     hud->raise();
+    contador->show();
+    contador->raise();
     actualizarHud();
+    actualizarContador();
 
     nivel->iniciar();
     setFocus();
@@ -164,6 +178,7 @@ void MainWindow::volverAlMenu()
 {
     vista->setScene(escenaMenu);
     hud->hide();
+    contador->hide();
     teclasPresionadas.clear();
 
     if (nivel)
@@ -192,6 +207,18 @@ void MainWindow::actualizarHud()
                      .arg(segundos % 60, 2, 10, QChar('0'))
                      .arg(pola->getVidas()));
     hud->adjustSize();
+}
+
+void MainWindow::actualizarContador()
+{
+    if (!nivel)
+        return;
+
+    contador->setText(QString("Pergaminos: %1/%2")
+                          .arg(nivel->pergaminosRecogidos())
+                          .arg(nivel->totalPergaminos()));
+    contador->adjustSize();
+    contador->move(width() - contador->width() - 10, 10);
 }
 
 void MainWindow::mostrarMensaje(const QString &texto)

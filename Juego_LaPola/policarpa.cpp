@@ -28,11 +28,6 @@ Policarpa::Policarpa()
 
     if (!animQuieta.isEmpty())
         setPixmap(animQuieta[0]);
-
-    efectoAtaque = new QGraphicsRectItem(this);
-    efectoAtaque->setBrush(QColor(255, 60, 60, 120));
-    efectoAtaque->setPen(Qt::NoPen);
-    efectoAtaque->setVisible(false);
 }
 
 void Policarpa::actualizar(double dt)
@@ -174,15 +169,31 @@ QVector<QPixmap> Policarpa::cargarTira(const QString &ruta, int nCuadros, double
 
 void Policarpa::actualizarAnimacion(double dt)
 {
+    if (vidas < vidasPrevias)
+    {
+        recibiendoDanio = true;
+        atacando = false;
+        animActual = nullptr;
+    }
+    vidasPrevias = vidas;
+
     const QVector<QPixmap> *nueva = nullptr;
 
-    if (!enSuelo)
+    if (recibiendoDanio && !animDanio.isEmpty())
+        nueva = &animDanio;
+    else if (atacando && !animAtacar.isEmpty())
+        nueva = &animAtacar;
+    else if (!enSuelo)
         nueva = &animSaltar;
     else if (qAbs(vx) > 0.01)
         nueva = &animCorrer;
     else
         nueva = &animQuieta;
 
+    if (recibiendoDanio && animDanio.isEmpty())
+        recibiendoDanio = false;
+    if (atacando && animAtacar.isEmpty())
+        atacando = false;
 
     if (nueva->isEmpty())
         nueva = &animQuieta;
@@ -197,7 +208,9 @@ void Policarpa::actualizarAnimacion(double dt)
         cuadroActual = 0;
         tiempoCuadro = 0;
 
-        animRepite = (animActual != &animSaltar);
+        animRepite = (animActual != &animSaltar &&
+                      animActual != &animAtacar &&
+                      animActual != &animDanio);
     }
 
 
@@ -205,7 +218,6 @@ void Policarpa::actualizarAnimacion(double dt)
         mirandoIzquierda = true;
     else if (vx > 0.01)
         mirandoIzquierda = false;
-
 
     tiempoCuadro += dt;
 
@@ -223,14 +235,17 @@ void Policarpa::actualizarAnimacion(double dt)
         }
         else
         {
+            if (animActual == &animAtacar)
+                atacando = false;
+            else if (animActual == &animDanio)
+                recibiendoDanio = false;
+
             tiempoCuadro = 0;
             break;
         }
     }
 
-
     QPixmap cuadro = (*animActual)[cuadroActual];
-
 
     if (mirandoIzquierda)
         cuadro = cuadro.transformed(QTransform().scale(-1, 1));
@@ -287,12 +302,14 @@ void Policarpa::setSueloActivo(bool valor)
 
 void Policarpa::atacar()
 {
-    // No golpea si todavía está en la pausa o si está agachada
     if (esperaAtaque > 0.0 || agachada)
         return;
 
     tiempoAtaque = DURACION_ATAQUE;
     esperaAtaque = ESPERA_ATAQUE;
+
+    atacando = true;
+    animActual = nullptr;
 }
 
 
@@ -313,7 +330,6 @@ QRectF Policarpa::zonaAtaque() const
     return mapRectToScene(zonaAtaqueLocal());
 }
 
-// Devuelve true si realmente perdió una vida
 bool Policarpa::recibirDanio()
 {
     if (tiempoInvulnerable > 0.0 || !estaVivo())

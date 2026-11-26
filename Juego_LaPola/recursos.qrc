@@ -13,5 +13,6 @@
         <file>imagenes/plataformas.png</file>
         <file>imagenes/techo.png</file>
         <file>imagenes/pola_danio.png</file>
+        <file>imagenes/mensaje.png</file>
     </qresource>
 </RCC>

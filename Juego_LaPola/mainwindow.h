@@ -43,5 +43,8 @@ private:
     Policarpa *pola = nullptr;
     QLabel *hud = nullptr;
     QSet<int> teclasPresionadas;
+
+    QLabel *contador = nullptr;
+    void actualizarContador();
 };
 #endif // MAINWINDOW_H

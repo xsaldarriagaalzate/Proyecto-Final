@@ -257,6 +257,16 @@ void Nivel::construirNivel1()
     agregarSoldado(76);
     agregarSoldado(79);
 
+    agregarPergamino(3, 0.8);
+    agregarPergamino(11, 0.7);
+    agregarPergamino(18, 0.2);
+    agregarPergamino(25, 0.5);
+    agregarPergamino(34, 0.4);
+    agregarPergamino(41, 0.3);
+    agregarPergamino(48, 0.1);
+    agregarPergamino(56, 0.5);
+    agregarPergamino(67, 0.7);
+    agregarPergamino(74, 0.8);
 
     ultimaPlataforma = 0;
     puntoSeguro = QPointF(100, rectanguloPiso(plataformas.first()).top());
@@ -267,10 +277,6 @@ void Nivel::cargarSprites()
 {
     spriteTecho = recortarTransparencia(QPixmap(":/imagenes/techo.png"));
     spritesLadrillo = cortarEnBandas(QPixmap(":/imagenes/plataformas.png"));
-
-    qDebug() << "techo.png cargado:" << !spriteTecho.isNull()
-             << "| piezas encontradas en plataformas.png:" << spritesLadrillo.size()
-             << "(deberían ser 3)";
 
     if (spriteTecho.isNull())
     {
@@ -317,18 +323,6 @@ void Nivel::agregarPlataforma(const QPixmap &dibujo, double x, double ySuperfici
 
     escena->addItem(imagen);
     plataformas.append(imagen);
-
-    // // Para depurar: el piso en verde. Es HIJO del dibujo, así que se mueve con él
-    // if (MOSTRAR_PLATAFORMAS)
-    // {
-    //     QRectF local(ancho * margenLateral, desfase,
-    //                  ancho * (1.0 - 2.0 * margenLateral), GROSOR_PLATAFORMA);
-
-    //     QGraphicsRectItem *guia = new QGraphicsRectItem(local, imagen);
-    //     guia->setBrush(QColor(0, 255, 0, 110));
-    //     guia->setPen(Qt::NoPen);
-    //     guia->setAcceptedMouseButtons(Qt::NoButton);   // los clics pasan al dibujo
-    // }
 }
 
 QRectF Nivel::rectanguloPiso(const QGraphicsPixmapItem *plataforma) const
@@ -402,6 +396,7 @@ void Nivel::tick()
 
     resolverPlataformas(piesAntes);
     resolverCombate();
+    recogerPergaminos();
 
     reglas(dt);
 
@@ -556,6 +551,54 @@ void Nivel::resolverCombate()
             entidades.removeOne(soldado);
             escena->removeItem(soldado);
             soldado->deleteLater();
+        }
+    }
+}
+
+//  MENSAJES
+
+void Nivel::agregarPergamino(int indicePlataforma, double posicion)
+{
+    if (indicePlataforma < 0 || indicePlataforma >= plataformas.size())
+    {
+        qDebug() << "agregarPergamino: no existe la plataforma" << indicePlataforma;
+        return;
+    }
+
+    QRectF piso = rectanguloPiso(plataformas[indicePlataforma]);
+
+    Pergamino *p = new Pergamino();
+
+    double ancho = p->boundingRect().width();
+    double alto = p->boundingRect().height();
+
+    double x = piso.left() + (piso.width() - ancho) * posicion;
+    double y = piso.top() - alto - ALTURA_PERGAMINO;
+
+    p->setPos(x, y);
+    agregar(p);
+    pergaminos.append(p);
+    ++total;
+}
+
+int Nivel::pergaminosRecogidos() const { return recogidos; }
+int Nivel::totalPergaminos() const { return total; }
+
+void Nivel::recogerPergaminos()
+{
+    for (int i = pergaminos.size() - 1; i >= 0; --i)
+    {
+        Pergamino *p = pergaminos[i];
+
+        if (m_pola->colisionaCon(p))
+        {
+            escena->removeItem(p);
+            entidades.removeOne(p);
+            pergaminos.removeAt(i);
+            p->deleteLater();
+
+            ++recogidos;
+            emit pergaminoRecogido(recogidos);
         }
     }
 }

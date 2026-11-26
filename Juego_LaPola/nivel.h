@@ -14,6 +14,7 @@
 #include "entidad.h"
 #include "policarpa.h"
 #include "soldado.h"
+#include "pergamino.h"
 
 class Nivel : public QObject
 {
@@ -34,10 +35,14 @@ public:
 
     void penalizar(double segundos);
 
+    int pergaminosRecogidos() const;
+    int totalPergaminos() const;
+
 signals:
     void actualizado();
     void victoria();
     void derrota();
+    void pergaminoRecogido(int cantidad);
 
 private:
 
@@ -80,6 +85,15 @@ private:
     QVector<Soldado*> soldados;
     QTimer reloj;
     QElapsedTimer cronometro;
+
+    void agregarPergamino(int indicePlataforma, double posicion);
+    void recogerPergaminos();
+
+    QVector<Pergamino*> pergaminos;
+    int recogidos = 0;
+    int total = 0;
+
+    static constexpr double ALTURA_PERGAMINO =  50.0;
 
     static constexpr bool MOSTRAR_PLATAFORMAS = true;
     static constexpr double GROSOR_PLATAFORMA = 20.0;

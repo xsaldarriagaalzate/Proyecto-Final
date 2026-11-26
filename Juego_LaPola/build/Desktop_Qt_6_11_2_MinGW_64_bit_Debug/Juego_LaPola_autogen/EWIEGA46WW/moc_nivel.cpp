@@ -42,7 +42,9 @@ template <> constexpr inline auto Nivel::qt_create_metaobjectdata<qt_meta_tag_ZN
         "actualizado",
         "",
         "victoria",
-        "derrota"
+        "derrota",
+        "pergaminoRecogido",
+        "cantidad"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -52,6 +54,10 @@ template <> constexpr inline auto Nivel::qt_create_metaobjectdata<qt_meta_tag_ZN
         QtMocHelpers::SignalData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'derrota'
         QtMocHelpers::SignalData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
+        // Signal 'pergaminoRecogido'
+        QtMocHelpers::SignalData<void(int)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 6 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -78,6 +84,7 @@ void Nivel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         case 0: _t->actualizado(); break;
         case 1: _t->victoria(); break;
         case 2: _t->derrota(); break;
+        case 3: _t->pergaminoRecogido((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     }
@@ -87,6 +94,8 @@ void Nivel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         if (QtMocHelpers::indexOfMethod<void (Nivel::*)()>(_a, &Nivel::victoria, 1))
             return;
         if (QtMocHelpers::indexOfMethod<void (Nivel::*)()>(_a, &Nivel::derrota, 2))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (Nivel::*)(int )>(_a, &Nivel::pergaminoRecogido, 3))
             return;
     }
 }
@@ -110,14 +119,14 @@ int Nivel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }
@@ -138,5 +147,11 @@ void Nivel::victoria()
 void Nivel::derrota()
 {
     QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+
+// SIGNAL 3
+void Nivel::pergaminoRecogido(int _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1);
 }
 QT_WARNING_POP

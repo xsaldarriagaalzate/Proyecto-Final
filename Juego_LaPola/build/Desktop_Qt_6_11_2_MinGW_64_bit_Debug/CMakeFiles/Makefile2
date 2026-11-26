@@ -79,16 +79,16 @@ clean: CMakeFiles/Juego_LaPola_autogen.dir/clean
 # Target rules for target CMakeFiles/Juego_LaPola.dir
 
 # All Build rule for target.
-CMakeFiles/Juego_LaPola.dir/all: CMakeFiles/Juego_LaPola_autogen_timestamp_deps.dir/all
 CMakeFiles/Juego_LaPola.dir/all: CMakeFiles/Juego_LaPola_autogen.dir/all
+CMakeFiles/Juego_LaPola.dir/all: CMakeFiles/Juego_LaPola_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target Juego_LaPola"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target Juego_LaPola"
 .PHONY : CMakeFiles/Juego_LaPola.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Juego_LaPola.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" 14
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Juego_LaPola.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" 0
 .PHONY : CMakeFiles/Juego_LaPola.dir/rule
@@ -135,7 +135,7 @@ CMakeFiles/Juego_LaPola_autogen_timestamp_deps.dir/clean:
 CMakeFiles/Juego_LaPola_autogen.dir/all: CMakeFiles/Juego_LaPola_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola_autogen.dir\build.make CMakeFiles/Juego_LaPola_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola_autogen.dir\build.make CMakeFiles/Juego_LaPola_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=14 "Built target Juego_LaPola_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=15 "Built target Juego_LaPola_autogen"
 .PHONY : CMakeFiles/Juego_LaPola_autogen.dir/all
 
 # Build rule for subdir invocation for target.

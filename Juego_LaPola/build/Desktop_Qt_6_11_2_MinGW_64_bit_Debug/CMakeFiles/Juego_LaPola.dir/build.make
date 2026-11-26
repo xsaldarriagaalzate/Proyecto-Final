@@ -85,6 +85,7 @@ Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Docum
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_quieta.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/guardia_quieto.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/fondo_inicio.png
+Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/mensaje.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/pola_correr.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/techo.png
 Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/imagenes/guardia_caminando.png
@@ -230,11 +231,26 @@ CMakeFiles/Juego_LaPola.dir/soldado.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Juego_LaPola.dir/soldado.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\soldado.cpp" -o CMakeFiles\Juego_LaPola.dir\soldado.cpp.s
 
+CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj: CMakeFiles/Juego_LaPola.dir/flags.make
+CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj: CMakeFiles/Juego_LaPola.dir/includes_CXX.rsp
+CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj: C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/pergamino.cpp
+CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj: CMakeFiles/Juego_LaPola.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj -MF CMakeFiles\Juego_LaPola.dir\pergamino.cpp.obj.d -o CMakeFiles\Juego_LaPola.dir\pergamino.cpp.obj -c "C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\pergamino.cpp"
+
+CMakeFiles/Juego_LaPola.dir/pergamino.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Juego_LaPola.dir/pergamino.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\pergamino.cpp" > CMakeFiles\Juego_LaPola.dir\pergamino.cpp.i
+
+CMakeFiles/Juego_LaPola.dir/pergamino.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Juego_LaPola.dir/pergamino.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\pergamino.cpp" -o CMakeFiles\Juego_LaPola.dir\pergamino.cpp.s
+
 CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj: CMakeFiles/Juego_LaPola.dir/flags.make
 CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj: CMakeFiles/Juego_LaPola.dir/includes_CXX.rsp
 CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj: Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp
 CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj: CMakeFiles/Juego_LaPola.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj -MF CMakeFiles\Juego_LaPola.dir\Juego_LaPola_autogen\EWIEGA46WW\qrc_recursos.cpp.obj.d -o CMakeFiles\Juego_LaPola.dir\Juego_LaPola_autogen\EWIEGA46WW\qrc_recursos.cpp.obj -c "C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\Juego_LaPola_autogen\EWIEGA46WW\qrc_recursos.cpp"
 
 CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.i: cmake_force
@@ -256,6 +272,7 @@ Juego_LaPola_OBJECTS = \
 "CMakeFiles/Juego_LaPola.dir/nivel.cpp.obj" \
 "CMakeFiles/Juego_LaPola.dir/enemigo.cpp.obj" \
 "CMakeFiles/Juego_LaPola.dir/soldado.cpp.obj" \
+"CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj" \
 "CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj"
 
 # External object files for target Juego_LaPola
@@ -270,6 +287,7 @@ Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/entidad.cpp.obj
 Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/nivel.cpp.obj
 Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/enemigo.cpp.obj
 Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/soldado.cpp.obj
+Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj
 Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/EWIEGA46WW/qrc_recursos.cpp.obj
 Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/build.make
 Juego_LaPola.exe: C:/Qt/6.11.2/mingw_64/lib/libQt6Widgets.a
@@ -280,7 +298,7 @@ Juego_LaPola.exe: Juego_LaPola.exe.manifest
 Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/linkLibs.rsp
 Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/objects1.rsp
 Juego_LaPola.exe: CMakeFiles/Juego_LaPola.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Juego_LaPola.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\XIOMARA ALZATE\Documents\Ingenieria Electronica\Semestre II\Informatica II\Proyecto Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Juego_LaPola.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Juego_LaPola.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

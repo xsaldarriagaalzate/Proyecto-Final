@@ -63,10 +63,16 @@ private:
     QVector<QPixmap> animAtacar;
     QVector<QPixmap> animDanio;
     const QVector<QPixmap> *animActual;
+
+
     int cuadroActual;
     double tiempoCuadro;
     bool mirandoIzquierda;
     bool animRepite;
+
+    bool atacando = false;
+    bool recibiendoDanio = false;
+    int vidasPrevias = 3;
 
     QRectF zonaAtaqueLocal() const;
 

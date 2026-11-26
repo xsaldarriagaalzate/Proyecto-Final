@@ -367,6 +367,30 @@ nivel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/nivel.cpp.s
 .PHONY : nivel.cpp.s
 
+pergamino.obj: pergamino.cpp.obj
+.PHONY : pergamino.obj
+
+# target to build an object file
+pergamino.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj
+.PHONY : pergamino.cpp.obj
+
+pergamino.i: pergamino.cpp.i
+.PHONY : pergamino.i
+
+# target to preprocess a source file
+pergamino.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/pergamino.cpp.i
+.PHONY : pergamino.cpp.i
+
+pergamino.s: pergamino.cpp.s
+.PHONY : pergamino.s
+
+# target to generate assembly for a file
+pergamino.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/pergamino.cpp.s
+.PHONY : pergamino.cpp.s
+
 personaje.obj: personaje.cpp.obj
 .PHONY : personaje.obj
 
@@ -475,6 +499,9 @@ help:
 	@echo ... nivel.obj
 	@echo ... nivel.i
 	@echo ... nivel.s
+	@echo ... pergamino.obj
+	@echo ... pergamino.i
+	@echo ... pergamino.s
 	@echo ... personaje.obj
 	@echo ... personaje.i
 	@echo ... personaje.s

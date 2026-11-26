@@ -371,6 +371,12 @@
 			null
 		],
 		[
+			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/pergamino.h",
+			"MU",
+			"EWIEGA46WW/moc_pergamino.cpp",
+			null
+		],
+		[
 			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/personaje.h",
 			"MU",
 			"EWIEGA46WW/moc_personaje.cpp",
@@ -483,6 +489,11 @@
 		],
 		[
 			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/nivel.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/pergamino.cpp",
 			"MU",
 			null
 		],
