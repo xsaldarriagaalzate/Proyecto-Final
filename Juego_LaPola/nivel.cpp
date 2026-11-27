@@ -6,6 +6,7 @@
 #include <QBrush>
 #include <QDebug>
 #include <QImage>
+#include <QPen>
 
 static QVector<QPixmap> cortarEnBandas(const QPixmap &hoja)
 {
@@ -94,7 +95,6 @@ Nivel::Nivel(int numero, QObject *padre)
     escena(new QGraphicsScene(this)),
     m_pola(nullptr),
     tiempoRestanteSeg(0),
-    metaX(0),
     fin(false),
     ultimaPlataforma(-1)
 {
@@ -104,6 +104,9 @@ Nivel::Nivel(int numero, QObject *padre)
     {
     case 1:
         construirNivel1();
+        break;
+    case 2:
+        construirNivel2();
         break;
     default:
         qDebug() << "El nivel" << m_numero << "todavía no existe.";
@@ -125,7 +128,6 @@ void Nivel::construirNivel1()
         qDebug() << "Error: no se encontró el fondo.";
         escena->setSceneRect(0, 0, 2400, 600);
         escena->setBackgroundBrush(Qt::black);
-        metaX = 2400 - MARGEN_META;
     }
     else
     {
@@ -147,7 +149,6 @@ void Nivel::construirNivel1()
         }
 
         escena->setSceneRect(0, 0, xActual, 600);
-        metaX = xActual - MARGEN_META;
     }
 
     m_pola = new Policarpa();
@@ -187,7 +188,7 @@ void Nivel::construirNivel1()
     agregarTecho(11710, 518, 280);   // 28
     agregarTecho(11977, 480, 280);   // 29
     agregarTecho(12781, 426, 280);   // 30
-    agregarTecho(13057, 502, 280);   // 31
+    agregarTecho(13100, 420, 280);   // 31
     agregarTecho(13479, 509, 280);   // 32
     agregarTecho(13729, 449, 280);   // 33
     agregarTecho(14306, 519, 280);   // 34
@@ -196,7 +197,7 @@ void Nivel::construirNivel1()
     agregarTecho(15476, 519, 280);   // 37
     agregarTecho(15949, 485, 280);   // 38
     agregarTecho(16228, 525, 280);   // 39
-    agregarTecho(16800, 450, 280);   // 40
+    agregarTecho(16550, 450, 280);   // 40
     agregarLadrillo(275, 357, 0);    // 41
     agregarLadrillo(581, 368, 1);    // 42
     agregarLadrillo(905, 264, 2);    // 43
@@ -228,13 +229,13 @@ void Nivel::construirNivel1()
     agregarLadrillo(12050, 330, 1);  // 69
     agregarLadrillo(12367, 460, 2);  // 70
     agregarLadrillo(12569, 231, 0);  // 71
-    agregarLadrillo(13285, 321, 1);  // 72
+    agregarLadrillo(13285, 324, 1);  // 72
     agregarLadrillo(13680, 284, 2);  // 73
     agregarLadrillo(14134, 382, 0);  // 74
-    agregarLadrillo(14463, 354, 1);  // 75
-    agregarLadrillo(14802, 231, 2);  // 76
+    agregarLadrillo(14380, 260, 1);  // 75
+    agregarLadrillo(14662, 200, 2);  // 76
     agregarLadrillo(15410, 330, 0);  // 77
-    agregarLadrillo(15730, 366, 1);  // 78
+    agregarLadrillo(15630, 206, 1);  // 78
     agregarLadrillo(16203, 330, 2);  // 79
     agregarLadrillo(16592, 262, 0);  // 80
 
@@ -248,10 +249,10 @@ void Nivel::construirNivel1()
     agregarSoldado(37);
     agregarSoldado(41);
     agregarSoldado(45);
-    agregarSoldado(49);
+    agregarSoldado(48);
     agregarSoldado(53);
     agregarSoldado(58);
-    agregarSoldado(62);
+    agregarSoldado(65);
     agregarSoldado(67);
     agregarSoldado(71);
     agregarSoldado(76);
@@ -268,9 +269,151 @@ void Nivel::construirNivel1()
     agregarPergamino(67, 0.7);
     agregarPergamino(74, 0.8);
 
+    agregarBuzon(40);
+    buzon->setZValue(6);
+
     ultimaPlataforma = 0;
     puntoSeguro = QPointF(100, rectanguloPiso(plataformas.first()).top());
     reaparecer();
+}
+
+void Nivel::construirNivel2()
+{
+    QPixmap hoja(":/imagenes/fondos_nivel-2.png");
+    const int N = 3;
+    int tw = hoja.width()  / N;
+    int th = hoja.height() / N;
+
+    int mapa[N][N] = { {0, 1, 2},
+                       {3, 4, 5},
+                       {6, 7, 8} };
+
+    for (int f = 0; f < N; ++f) {
+        for (int c = 0; c < N; ++c) {
+            int k = mapa[f][c];
+            QPixmap baldosa = hoja.copy((k % N) * tw, (k / N) * th, tw, th);
+            QGraphicsPixmapItem *it = escena->addPixmap(baldosa);
+            it->setPos(c * tw, f * th);
+            it->setZValue(0);
+        }
+    }
+    int anchoMapa = N * tw, altoMapa = N * th;
+    escena->setSceneRect(0, 0, anchoMapa, altoMapa);
+
+    // auto agregarPared = [this](qreal x, qreal y, qreal w, qreal h) {
+    //     QGraphicsRectItem *p = escena->addRect(0, 0, w, h, QPen(Qt::NoPen), QBrush(Qt::NoBrush));
+    //     // para depurar: QBrush(QColor(255, 0, 0, 80)) en vez de NoBrush
+    //     p->setPos(x, y);
+    //     p->setData(0, "pared");
+    //     p->setZValue(0.5);
+    // };
+
+    const bool DEPURAR_PAREDES = true;
+
+    auto agregarPared = [this, DEPURAR_PAREDES](qreal x, qreal y, qreal w, qreal h) {
+        QBrush pincel = DEPURAR_PAREDES ? QBrush(QColor(255, 0, 0, 90))
+                                        : QBrush(Qt::NoBrush);
+        QGraphicsRectItem *p = escena->addRect(0, 0, w, h, QPen(Qt::NoPen), pincel);
+        p->setPos(x, y);
+        p->setData(0, "pared");
+        p->setZValue(0.5);
+    };
+
+    // Bordes del mapa
+    agregarPared(-20, 0, 20, altoMapa);              // izquierda
+    agregarPared(anchoMapa, 0, 20, altoMapa);        // derecha
+    agregarPared(0, -20, anchoMapa, 20);             // arriba
+    agregarPared(0, altoMapa, anchoMapa, 20);        // abajo
+
+    // Obstáculos internos (x, y, ancho, alto)
+
+    agregarPared(145, 208, 95, 95);
+    agregarPared(70, 192, 15, 150);
+    agregarPared(330, 15, 135, 50);
+    agregarPared(306, 192, 15, 150);
+    agregarPared(15, 15, 320, 30);
+    agregarPared(435, 410, 20, 20);
+
+    agregarPared(468, 255, 20, 180);
+    agregarPared(755, 255, 20, 180);
+    agregarPared(468, 15, 20, 120);
+    agregarPared(755, 15, 20, 120);
+    agregarPared(505, 415, 245, 20);
+
+    agregarPared(775, 255, 65, 20);
+    agregarPared(775, 75, 100, 20);
+    agregarPared(880, 15, 270, 25);
+    agregarPared(1160, 15, 20, 190);
+    agregarPared(820, 275, 20, 60);
+    agregarPared(900, 280, 180, 5);
+    agregarPared(845, 360, 290, 5);
+    agregarPared(1095, 115, 70, 50);
+
+    agregarPared(410, 410, 20, 90);
+    agregarPared(15, 435, 320, 30);
+    agregarPared(340, 465, 20, 30);
+    agregarPared(15, 630, 20, 100);
+    agregarPared(30, 755, 55, 20);
+    agregarPared(310, 755, 55, 20);
+    agregarPared(85, 795, 55, 20);
+    agregarPared(240, 795, 55, 20);
+    agregarPared(370, 620, 20, 110);
+
+    agregarPared(445, 490, 65, 20);
+    agregarPared(505, 530, 65, 20);
+    agregarPared(570, 540, 245, 20);
+    agregarPared(390, 620, 70, 20);
+    agregarPared(460, 630, 20, 180);
+    agregarPared(540, 675, 20, 135);
+    agregarPared(565, 675, 245, 20);
+
+    agregarPared(820, 520, 350, 20);
+    agregarPared(1160, 370, 20, 280);
+    agregarPared(1090, 800, 150, 20);
+    agregarPared(890, 800, 100, 20);
+
+    agregarPared(40, 830, 100, 20);
+    agregarPared(20, 850, 20, 100);
+    agregarPared(240, 830, 100, 20);
+    agregarPared(340, 850, 20, 70);
+    agregarPared(370, 900, 50, 20);
+    agregarPared(20, 1000, 50, 20);
+    agregarPared(70, 1020, 35, 20);
+    agregarPared(105, 1040, 35, 20);
+    agregarPared(140, 1060, 15, 90);
+    agregarPared(315, 1000, 100, 20);
+    agregarPared(285, 1020, 35, 20);
+    agregarPared(245, 1040, 35, 20);
+    agregarPared(230, 1060, 15, 90);
+    agregarPared(155, 1150, 70, 20);
+
+    agregarPared(430, 800, 20, 100);
+    agregarPared(430, 1000, 20, 210);
+    agregarPared(460, 1210, 70, 20);
+    agregarPared(710, 1210, 70, 20);
+    agregarPared(540, 850, 190, 40);
+    agregarPared(730, 750, 20, 220);
+    agregarPared(820, 820, 20, 200);
+    agregarPared(750, 1090, 20, 100);
+    agregarPared(770, 1120, 50, 20);
+
+    agregarPared(835, 1020, 20, 10);
+    agregarPared(855, 1040, 20, 10);
+    agregarPared(875, 1060, 120, 10);
+    agregarPared(835, 1150, 20, 10);
+    agregarPared(855, 1180, 240, 10);
+    agregarPared(1100, 1060, 20, 120);
+    agregarPared(930, 880, 20, 140);
+    agregarPared(980, 830, 20, 110);
+    agregarPared(1080, 830, 20, 110);
+    agregarPared(1110, 940, 140, 20);
+    agregarPared(1110, 1060, 140, 20);
+
+
+    polaCen = new PolaCenital();
+    polaCen->setPos(anchoMapa / 2, 600);
+    polaCen->setZValue(1);
+    agregar(polaCen);
 }
 
 void Nivel::cargarSprites()
@@ -349,13 +492,12 @@ bool Nivel::terminado() const { return fin; }
 
 void Nivel::iniciar()
 {
-    if (!m_pola)
+    if (!m_pola && !polaCen)
         return;     // el nivel no se construyó
 
     cronometro.start();
     reloj.start(16);
 }
-
 void Nivel::agregar(Entidad *e)
 {
     escena->addItem(e);
@@ -389,6 +531,16 @@ void Nivel::tick()
     if (dt > 0.05)
         dt = 0.05;
 
+    if (m_numero == 2)
+    {
+        for (Entidad *e : entidades)
+            e->actualizar(dt);
+
+        reglas(dt);
+        emit actualizado();
+        return;                 // no ejecuta lo del nivel 1
+    }
+
     double piesAntes = m_pola->pies();
 
     for (Entidad *e : entidades)
@@ -397,6 +549,7 @@ void Nivel::tick()
     resolverPlataformas(piesAntes);
     resolverCombate();
     recogerPergaminos();
+    revisarBuzon();
 
     reglas(dt);
 
@@ -473,18 +626,15 @@ void Nivel::reglas(double dt)
     case 1:
         reglasNivel1(dt);
         break;
+    case 2:
+        reglasNivel2(dt);
+        break;
     }
 }
 
 void Nivel::reglasNivel1(double dt)
 {
     tiempoRestanteSeg -= dt;
-
-    if (m_pola->x() + m_pola->boundingRect().width() >= metaX)
-    {
-        terminar(true);
-        return;
-    }
 
     if (!m_pola->estaVivo())
     {
@@ -497,6 +647,20 @@ void Nivel::reglasNivel1(double dt)
         tiempoRestanteSeg = 0;
         terminar(false);
     }
+}
+
+void Nivel::reglasNivel2(double dt)
+{
+
+    Q_UNUSED(dt);
+
+    if (!polaCen->estaVivo())
+    {
+        terminar(false);
+        return;
+    }
+
+    // Aquí irá la condición de victoria del nivel 2
 }
 
 // GUARDIAS
@@ -600,5 +764,53 @@ void Nivel::recogerPergaminos()
             ++recogidos;
             emit pergaminoRecogido(recogidos);
         }
+    }
+}
+
+void Nivel::agregarBuzon(int indicePlataforma)
+{
+    if (indicePlataforma < 0 || indicePlataforma >= plataformas.size())
+    {
+        qDebug() << "agregarBuzon: no existe la plataforma" << indicePlataforma;
+        return;
+    }
+
+    QPixmap hoja(":/imagenes/buzon.png");
+
+    if (hoja.isNull())
+    {
+        qDebug() << "No se encontró :/imagenes/buzon.png (revisa el .qrc)";
+        return;
+    }
+
+    int anchoCuadro = hoja.width() / 2;
+
+    for (int i = 0; i < 2; ++i)
+    {
+        QPixmap cuadro = hoja.copy(i * anchoCuadro, 0, anchoCuadro, hoja.height());
+        cuadrosBuzon.append(cuadro.scaledToHeight(ALTO_BUZON, Qt::FastTransformation));
+    }
+
+    QRectF piso = rectanguloPiso(plataformas[indicePlataforma]);
+
+    buzon = new QGraphicsPixmapItem(cuadrosBuzon[0]);
+    buzon->setPos(piso.center().x() - buzon->pixmap().width() / 2.0,
+                  piso.top() - buzon->pixmap().height());
+    buzon->setZValue(3);
+    escena->addItem(buzon);
+}
+
+void Nivel::revisarBuzon()
+{
+    if (!buzon || buzonActivado || cuadrosBuzon.size() < 2)
+        return;
+
+    bool tocando = m_pola->sceneBoundingRect().intersects(buzon->sceneBoundingRect());
+
+    if (tocando && recogidos == total)
+    {
+        buzonActivado = true;
+        buzon->setPixmap(cuadrosBuzon[1]);   // se abre
+        terminar(true);                      // victoria
     }
 }

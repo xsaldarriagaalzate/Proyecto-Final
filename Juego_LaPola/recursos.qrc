@@ -14,5 +14,12 @@
         <file>imagenes/techo.png</file>
         <file>imagenes/pola_danio.png</file>
         <file>imagenes/mensaje.png</file>
+        <file>imagenes/buzon.png</file>
+        <file>imagenes/pola_caminar_abajo.png</file>
+        <file>imagenes/pola_caminar_arriba.png</file>
+        <file>imagenes/pola_caminar_lados.png</file>
+        <file>imagenes/pola_reposo_detras.png</file>
+        <file>imagenes/fondos_nivel-2.png</file>
+        <file>imagenes/pola_reposo.png</file>
     </qresource>
 </RCC>

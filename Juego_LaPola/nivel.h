@@ -15,6 +15,7 @@
 #include "policarpa.h"
 #include "soldado.h"
 #include "pergamino.h"
+#include "polaCenital.h"
 
 class Nivel : public QObject
 {
@@ -37,6 +38,9 @@ public:
 
     int pergaminosRecogidos() const;
     int totalPergaminos() const;
+
+    PolaCenital *polaCen = nullptr;
+    PolaCenital *polaCenital() const { return polaCen; }
 
 signals:
     void actualizado();
@@ -61,6 +65,7 @@ private:
 
     void reglas(double dt);
     void reglasNivel1(double dt);
+    void reglasNivel2(double dt);
 
     void resolverPlataformas(double piesAntes);
     void reaparecer();
@@ -73,7 +78,6 @@ private:
     QGraphicsScene *escena;
     Policarpa *m_pola;
     double tiempoRestanteSeg;
-    double metaX;
     bool fin;
     int ultimaPlataforma;
     QPointF puntoSeguro;
@@ -92,6 +96,19 @@ private:
     QVector<Pergamino*> pergaminos;
     int recogidos = 0;
     int total = 0;
+
+    void agregarBuzon(int indicePlataforma);
+    void revisarBuzon();
+
+    QGraphicsPixmapItem *buzon = nullptr;
+    QVector<QPixmap> cuadrosBuzon;
+    bool buzonActivado = false;
+
+    void construirNivel2();
+
+
+
+    static constexpr double ALTO_BUZON = 120.0;
 
     static constexpr double ALTURA_PERGAMINO =  50.0;
 

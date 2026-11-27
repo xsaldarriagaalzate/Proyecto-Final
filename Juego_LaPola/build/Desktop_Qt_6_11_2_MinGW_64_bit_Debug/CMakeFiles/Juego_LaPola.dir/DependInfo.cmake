@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/nivel.cpp" "CMakeFiles/Juego_LaPola.dir/nivel.cpp.obj" "gcc" "CMakeFiles/Juego_LaPola.dir/nivel.cpp.obj.d"
   "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/pergamino.cpp" "CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj" "gcc" "CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj.d"
   "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/personaje.cpp" "CMakeFiles/Juego_LaPola.dir/personaje.cpp.obj" "gcc" "CMakeFiles/Juego_LaPola.dir/personaje.cpp.obj.d"
+  "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/polaCenital.cpp" "CMakeFiles/Juego_LaPola.dir/polaCenital.cpp.obj" "gcc" "CMakeFiles/Juego_LaPola.dir/polaCenital.cpp.obj.d"
   "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/policarpa.cpp" "CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj" "gcc" "CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj.d"
   "C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/soldado.cpp" "CMakeFiles/Juego_LaPola.dir/soldado.cpp.obj" "gcc" "CMakeFiles/Juego_LaPola.dir/soldado.cpp.obj.d"
   )

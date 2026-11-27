@@ -454,6 +454,8 @@ CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.obj: \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\soldado.h \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\enemigo.h \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\pergamino.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\polaCenital.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\Personaje.h \
  C:/Users/XIOMAR~1/DOCUME~1/INGENI~1/SEMEST~2/INFORM~1/PROYEC~1/JUEGO_~1/build/DESKTO~1/JUEGO_~1/include/./ui_mainwindow.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QApplication \
@@ -477,4 +479,5 @@ CMakeFiles/Juego_LaPola.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicsproxywidget.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicswidget.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsTextItem
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGraphicsTextItem \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/QPen

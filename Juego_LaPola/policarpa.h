@@ -79,7 +79,6 @@ private:
     double tiempoAtaque = 0.0;
     double esperaAtaque = 0.0;
     double tiempoInvulnerable = 0.0;
-    QGraphicsRectItem *efectoAtaque = nullptr;
 
     static constexpr double DURACION_ATAQUE = 0.25;       // s que dura el golpe
     static constexpr double ESPERA_ATAQUE = 0.5;          // s entre un golpe y el siguiente

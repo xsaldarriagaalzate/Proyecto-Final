@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Juego_LaPola.dir/pergamino.cpp.obj.d"
   "CMakeFiles/Juego_LaPola.dir/personaje.cpp.obj"
   "CMakeFiles/Juego_LaPola.dir/personaje.cpp.obj.d"
+  "CMakeFiles/Juego_LaPola.dir/polaCenital.cpp.obj"
+  "CMakeFiles/Juego_LaPola.dir/polaCenital.cpp.obj.d"
   "CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj"
   "CMakeFiles/Juego_LaPola.dir/policarpa.cpp.obj.d"
   "CMakeFiles/Juego_LaPola.dir/soldado.cpp.obj"

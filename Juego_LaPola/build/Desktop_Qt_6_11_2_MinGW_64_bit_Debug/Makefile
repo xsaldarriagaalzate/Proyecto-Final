@@ -415,6 +415,30 @@ personaje.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/personaje.cpp.s
 .PHONY : personaje.cpp.s
 
+polaCenital.obj: polaCenital.cpp.obj
+.PHONY : polaCenital.obj
+
+# target to build an object file
+polaCenital.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/polaCenital.cpp.obj
+.PHONY : polaCenital.cpp.obj
+
+polaCenital.i: polaCenital.cpp.i
+.PHONY : polaCenital.i
+
+# target to preprocess a source file
+polaCenital.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/polaCenital.cpp.i
+.PHONY : polaCenital.cpp.i
+
+polaCenital.s: polaCenital.cpp.s
+.PHONY : polaCenital.s
+
+# target to generate assembly for a file
+polaCenital.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Juego_LaPola.dir\build.make CMakeFiles/Juego_LaPola.dir/polaCenital.cpp.s
+.PHONY : polaCenital.cpp.s
+
 policarpa.obj: policarpa.cpp.obj
 .PHONY : policarpa.obj
 
@@ -505,6 +529,9 @@ help:
 	@echo ... personaje.obj
 	@echo ... personaje.i
 	@echo ... personaje.s
+	@echo ... polaCenital.obj
+	@echo ... polaCenital.i
+	@echo ... polaCenital.s
 	@echo ... policarpa.obj
 	@echo ... policarpa.i
 	@echo ... policarpa.s

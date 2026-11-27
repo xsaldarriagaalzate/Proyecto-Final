@@ -5,5 +5,6 @@
 #include "EWIEGA46WW/moc_nivel.cpp"
 #include "EWIEGA46WW/moc_pergamino.cpp"
 #include "EWIEGA46WW/moc_personaje.cpp"
+#include "EWIEGA46WW/moc_polaCenital.cpp"
 #include "EWIEGA46WW/moc_policarpa.cpp"
 #include "EWIEGA46WW/moc_soldado.cpp"

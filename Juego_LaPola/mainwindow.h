@@ -7,6 +7,8 @@
 #include <QSet>
 #include <QKeyEvent>
 #include <QGraphicsScene>
+#include <functional>
+
 #include "nivel.h"
 
 QT_BEGIN_NAMESPACE
@@ -46,5 +48,19 @@ private:
 
     QLabel *contador = nullptr;
     void actualizarContador();
+
+    QGraphicsScene *crearPantalla(const QString &titulo, const QString &html,
+                                  const QString &textoBoton,
+                                  std::function<void()> alPulsar);
+    void crearHistoria();
+    void crearControles();
+    void mostrarHistoria(int numero);
+
+    QGraphicsScene *escenaHistoria = nullptr;
+    QGraphicsScene *escenaControles = nullptr;
+    int nivelPendiente = 1;
+
+    PolaCenital *polaC = nullptr;
+    int numeroActual = 1;
 };
 #endif // MAINWINDOW_H

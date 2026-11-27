@@ -70,17 +70,6 @@ void Policarpa::actualizar(double dt)
         setOpacity((int(tiempoInvulnerable * 10) % 2) ? 0.35 : 1.0);
     else
         setOpacity(1.0);
-
-
-    if (tiempoAtaque > 0.0)
-    {
-        efectoAtaque->setRect(zonaAtaqueLocal());
-        efectoAtaque->setVisible(true);
-    }
-    else
-    {
-        efectoAtaque->setVisible(false);
-    }
 }
 
 QRect Policarpa::limitesVisibles(const QImage &original)

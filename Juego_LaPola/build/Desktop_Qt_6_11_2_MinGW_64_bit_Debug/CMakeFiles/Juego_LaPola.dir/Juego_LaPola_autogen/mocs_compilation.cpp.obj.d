@@ -462,6 +462,8 @@ CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/mocs_compilation.cpp.obj: \
  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/soldado.h \
  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/enemigo.h \
  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/pergamino.h \
+ C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/polaCenital.h \
+ C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/Personaje.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qtextcursor.h \
  C:/Qt/6.11.2/mingw_64/include/QtGui/qtextformat.h \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\Juego_LaPola_autogen\EWIEGA46WW/moc_nivel.cpp \
@@ -470,6 +472,8 @@ CMakeFiles/Juego_LaPola.dir/Juego_LaPola_autogen/mocs_compilation.cpp.obj: \
  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/pergamino.h \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\Juego_LaPola_autogen\EWIEGA46WW/moc_personaje.cpp \
  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/personaje.h \
+ C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\Juego_LaPola_autogen\EWIEGA46WW/moc_polaCenital.cpp \
+ C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/polaCenital.h \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\Juego_LaPola_autogen\EWIEGA46WW/moc_policarpa.cpp \
  C:/Users/XIOMARA\ ALZATE/Documents/Ingenieria\ Electronica/Semestre\ II/Informatica\ II/Proyecto\ Final/Juego_LaPola/policarpa.h \
  C:\Users\XIOMARA\ ALZATE\Documents\Ingenieria\ Electronica\Semestre\ II\Informatica\ II\Proyecto\ Final\Juego_LaPola\build\Desktop_Qt_6_11_2_MinGW_64_bit_Debug\Juego_LaPola_autogen\EWIEGA46WW/moc_soldado.cpp \

@@ -383,6 +383,12 @@
 			null
 		],
 		[
+			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/polaCenital.h",
+			"MU",
+			"EWIEGA46WW/moc_polaCenital.cpp",
+			null
+		],
+		[
 			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/policarpa.h",
 			"MU",
 			"EWIEGA46WW/moc_policarpa.cpp",
@@ -499,6 +505,11 @@
 		],
 		[
 			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/personaje.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/XIOMARA ALZATE/Documents/Ingenieria Electronica/Semestre II/Informatica II/Proyecto Final/Juego_LaPola/polaCenital.cpp",
 			"MU",
 			null
 		],
